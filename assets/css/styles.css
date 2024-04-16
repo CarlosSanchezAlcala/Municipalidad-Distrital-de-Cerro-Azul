@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 3rem;
+    --header-height: 2.25rem;
 
     /*========== Colors ==========*/
 
@@ -53,6 +53,11 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /*========= Paleta de colores Municipalidad de Cerro Azul =========*/
+    --muni-tono-azul-1: #00446B;
+    --muni-tono-azul-2: #015da8;
+
 }
 
 /* Font size for large devices */
@@ -142,7 +147,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--muni-tono-azul-1);
 }
 
 .section__subtitle {
@@ -179,7 +184,7 @@ img {
 
 /*==================== NAV ====================*/
 .nav{
-  max-width: 1500px;
+  max-width: 100rem;
   height: var(--header-height);
   display: flex;
   justify-content:space-between;
@@ -260,7 +265,7 @@ img {
 
 /* Active link */
 .active-link{
-  color: var(--first-color);
+  color: var(--muni-tono-azul-2);
 }
 
 
@@ -299,7 +304,7 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 60rem;
+  height: 61.91rem;
   margin: 0px;
   gap: 1rem;
 }
@@ -1216,7 +1221,7 @@ color: var(--first-color);
   }
 
   .home_content{
-    padding-top: 5.5rem;
+    padding-top: 0rem;
     column-gap: 2rem;
   }
 
@@ -1355,9 +1360,21 @@ color: var(--first-color);
 }
 
 .icon_image {
-  width: 50px; /* Ancho de la imagen */
-  height: 50px; /* Alto de la imagen */
+  width: 9%; /* Ancho de la imagen */
+  height: 9%; /* Alto de la imagen */
   border-radius: 50%; /* Para hacer que la imagen sea un círculo */
-  margin-right: 5px; /* Espacio entre la imagen y el texto */
+  margin-right: 8px; /* Espacio entre la imagen y el texto */
   vertical-align: middle; /*Alinea la imagen verticalmente con el texto */
+}
+
+/*
+.body-municipality {
+  background-color: antiquewhite;
+}
+*/
+
+.cuadrado {
+  width: 100%; /* Ancho del cuadrado */
+  height: 110px; /* Alto del cuadrado */
+  background-color: #015da8; /* Color de fondo del cuadrado */
 }
