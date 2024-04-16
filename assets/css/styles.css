@@ -1239,12 +1239,13 @@ color: var(--first-color);
 
   .about_container{
     column-gap: 5rem;
+    margin-top: 2rem;
   }
 
   .about_img{
-    width: 212px;
-    margin: -50px;
-    margin-right: -90px;
+    width: 245px;
+    margin: -80px;
+    margin-right: -140px;
     justify-self: center;
     }
 
