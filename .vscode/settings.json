@@ -1,6 +1,6 @@
 {
-    "cSpell.words": [
-        "Desarrollo",
-        "Inclusivo"
-    ]
+    "cSpell.words": ["portada"],
+
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
 }
