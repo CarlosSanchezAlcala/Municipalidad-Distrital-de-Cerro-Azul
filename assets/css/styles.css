@@ -1385,13 +1385,18 @@ color: var(--first-color);
 
 .footer_muni {
   background-color: #015da8;
-  height: 2rem;
+  height: 10rem;
 }
 
 .footer_description {
   color: white;
   font-size: 15px;
+  text-align: center;
 }
+
+
+/*
+========================
 
 .links_inter,
 .publics_obras,
@@ -1400,7 +1405,7 @@ color: var(--first-color);
 .transparence {
   color: black;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -1408,4 +1413,144 @@ color: var(--first-color);
 .contacts,
 .transparence {
   text-align: center;
+}
+
+.table_links_muni {
+  text-align: center;
+  width: 100%; /* Ancho máximo de la tabla
+  border-collapse: separate; /* Fusionar bordes de celdas
+  margin-bottom: 20px; /* Margen inferior para separar la tabla del contenido siguiente
+  border-spacing: 27px;
+}
+
+.table_links_muni th {
+  /* background-color: #015da8;  Color de fondo de las celdas de cabecera */
+  /* color: white;  Color del texto de las celdas de cabecera */
+  /* font-size: 15px;  Tamaño de la fuente de las celdas de cabecera
+  padding: 10px; /* Espaciado interno de las celdas de cabecera
+}
+
+/*
+.table_links_muni tbody tr:nth-child(odd) {
+  background-color: #c78c62; ============== Color de fondo alternativo ==============
+}
+
+
+.table_links_muni a {
+  color: #6A6D7C;
+}
+
+.img-table-muni {
+  width: 184.18px;
+}
+
+.table_images_muni td {
+  text-align: center;
+}
+
+.table_images_muni {
+  text-align: center;
+  width: 100%;
+}
+
+.text-100-dias {
+  font-family: 'Sansita Swashed', display;
+}
+
+.images-table {
+  background-color: var(--muni-tono-azul-2);
+  padding: 25px;
+}
+
+.text-100-dias-description {
+  color: white;
+}
+
+/* Estilos adicionales para dispositivos móviles
+@media only screen and (max-width: 600px) {
+
+  /* Alinear el texto de las celdas al centro
+  .table_links_muni td {
+    text-align: center;
+  }
+
+  /* Espacio entre filas
+  .table_links_muni tbody tr {
+    margin-bottom: 10px;
+  }
+
+  /* Ajustar tamaño del texto
+  .table_links_muni a {
+    font-size: 14px;
+  }
+}
+*/
+
+.table-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: calc(33.33% - 20px); /* Ancho de cada columna */
+}
+
+.column-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .column {
+      width: 100%; /* Cambia el ancho a 100% para que se apilen */
+  }
+}
+
+.links-muni-page a {
+  color: #6A6D7C;
+}
+
+.img-table-muni {
+  width: 100%; /* Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
+  max-width: 184.18px; /* Establecer un ancho máximo para mantener el tamaño original de la imagen */
+  display: block; /* Hacer que las imágenes sean elementos de bloque */
+  margin: 0 auto; /* Centrar horizontalmente las imágenes */
+}
+
+.table-container-image-standard {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--muni-tono-azul-2);
+  padding: 25px;
+  padding-bottom: 1px;
+  padding-top: 35px;
+}
+
+.text-100-dias-description {
+  color: white;
+}
+
+.column-image {
+  width: calc(25% - 5px); /* Ancho de cada columna */
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
