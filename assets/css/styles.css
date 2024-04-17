@@ -297,7 +297,7 @@ img {
 
 /*==================== HOME ====================*/
 .home {
-  background-image: url("../img/black.png");
+  background-image: url("../img/");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1355,11 +1355,11 @@ color: var(--first-color);
 }
 
 .icon_image {
-  width: 9%; /* Ancho de la imagen */
-  height: 9%; /* Alto de la imagen */
-  border-radius: 50%; /* Para hacer que la imagen sea un círculo */
-  margin-right: 8px; /* Espacio entre la imagen y el texto */
-  vertical-align: middle; /*Alinea la imagen verticalmente con el texto */
+  width: 9%; /* *TODO Ancho de la imagen */
+  height: 9%; /* *TODO Alto de la imagen */
+  border-radius: 50%; /* *TODO Para hacer que la imagen sea un círculo */
+  margin-right: 8px; /* *TODO Espacio entre la imagen y el texto */
+  vertical-align: middle; /* *TODO Alinea la imagen verticalmente con el texto */
 }
 
 /*
@@ -1368,10 +1368,10 @@ color: var(--first-color);
 }
 */
 
-.cuadrado {
-  width: 100%; /* Ancho del cuadrado */
-  height: 110px; /* Alto del cuadrado */
-  background-color: #015da8; /* Color de fondo del cuadrado */
+.container-icon-access {
+  width: 100%; /* *TODO Ancho del cuadrado */
+  height: 110px; /* *TODO Alto del cuadrado */
+  background-color: #015da8; /* *TODO Color de fondo del cuadrado */
 }
 
 .intranet_color {
@@ -1382,8 +1382,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ajusta la altura según sea necesario */
-  width: 100%; /* Cubrir el ancho completo */
+  height: 100%; /* *TODO Ajusta la altura según sea necesario */
+  width: 100%; /* *TODO Cubrir el ancho completo */
   background-color: #015da8;
 }
 
@@ -1630,4 +1630,30 @@ ul li {
   width: 245px;
   margin: -80px;
   justify-self: center;
+}
+
+.container-falling {
+  position: relative;
+  height: 200px; /* Altura del contenedor */
+  overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.falling-text {
+  position: absolute;
+  top: -50px; /* Inicia arriba del contenedor */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente */
+  display: flex;
+  flex-direction: row;
+}
+
+.falling-text span {
+  opacity: 0; /* Inicialmente, las letras son invisibles */
+  animation: fall 1s ease forwards; /* Animación de caída */
+}
+
+@keyframes fall {
+  to {
+      opacity: 1; /* Hace visible la letra cuando llega */
+  }
 }
