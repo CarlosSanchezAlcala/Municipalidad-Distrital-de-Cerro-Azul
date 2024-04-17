@@ -1243,13 +1243,6 @@ color: var(--first-color);
     margin-top: 2rem;
   }
 
-  .about_img{
-    width: 245px;
-    margin: -80px;
-    margin-right: -140px;
-    justify-self: center;
-    }
-
   .about_description{
     text-align:initial;
   }
@@ -1533,7 +1526,7 @@ ul li {
   margin-bottom: 20px;
 }
 
-/* Estilos específicos para dispositivos móviles */
+/* *! ====================================== Estilos específicos para dispositivos móviles ====================================== */
 @media only screen and (max-width: 600px) {
   .column,
   .column-image {
@@ -1607,7 +1600,7 @@ ul li {
   margin-right: 98px;
 }
 
-/* ================== SECTION TABLE IMAGES RELATIONAL ================== */
+/* *! ====================================== SECTION TABLE IMAGES RELATIONAL ====================================== */
 .table-container-image-standard {
   text-align: center;
   display: flex;
@@ -1617,4 +1610,24 @@ ul li {
   padding: 25px;
   padding-bottom: 13px;
   padding-top: 35px;
+}
+
+/* *! ====================================== SECTION INFORMATION ALCALDE (IMAGEN - FOTOGRAFÍA DEL ALCALDE) ====================================== */
+.image-container {
+  perspective: 1000px; /* *TODO: Define la perspectiva para el efecto 3D */
+  display: inline-block;
+}
+
+.image-container img {
+  transition: transform 0.5s; /* *TODO: Transición suave de la transformación */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* *TODO: Escala la imagen al 110% al pasar el mouse */
+}
+
+.about_img {
+  width: 245px;
+  margin: -80px;
+  justify-self: center;
 }
