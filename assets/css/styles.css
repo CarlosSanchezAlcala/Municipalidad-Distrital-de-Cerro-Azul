@@ -1385,4 +1385,27 @@ color: var(--first-color);
 
 .footer_muni {
   background-color: #015da8;
+  height: 2rem;
+}
+
+.footer_description {
+  color: white;
+  font-size: 15px;
+}
+
+.links_inter,
+.publics_obras,
+.links_externs,
+.contacts,
+.transparence {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.links_externs,
+.contacts,
+.transparence {
+  text-align: center;
 }
