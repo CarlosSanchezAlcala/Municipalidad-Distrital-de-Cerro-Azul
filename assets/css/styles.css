@@ -38,7 +38,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*========== home Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -979,7 +979,7 @@ color: var(--first-color);
   outline: none;
   padding: .25rem .5rem .5rem 0;
 }
-/*==================== FOOTER ====================*/
+/*==================== FOOTER ====================
 .footer{
   padding-top: 2rem;
 }
@@ -1034,6 +1034,8 @@ color: var(--first-color);
 .footer_social{
   color: #FFF;
 }
+*/
+
 /*========== SCROLL UP ==========*/
 .scrollup{
   position: fixed;
@@ -1383,15 +1385,34 @@ color: var(--first-color);
   color: #c78c62;
 }
 
-.footer_muni {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajusta la altura según sea necesario */
+  width: 100%; /* Cubrir el ancho completo */
   background-color: #015da8;
+}
+
+.footer_muni {
   height: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente */
 }
 
 .footer_description {
+  margin: 0;
   color: white;
   font-size: 15px;
-  text-align: center;
+}
+
+.footer_description_verificator {
+  margin: 0;
+  color: white;
+  font-size: 12px;
 }
 
 
@@ -1514,7 +1535,8 @@ ul li {
 
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
-  .column {
+  .column,
+  .column-image {
       width: 100%; /* Cambia el ancho a 100% para que se apilen */
   }
 }
@@ -1525,9 +1547,30 @@ ul li {
 
 .img-table-muni {
   width: 100%; /* Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
-  max-width: 184.18px; /* Establecer un ancho máximo para mantener el tamaño original de la imagen */
+  max-width: 215px; /* Establecer un ancho máximo para mantener el tamaño original de la imagen */
   display: block; /* Hacer que las imágenes sean elementos de bloque */
   margin: 0 auto; /* Centrar horizontalmente las imágenes */
+}
+
+.img-table-muni-audiencia {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-table-muni-separacion {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-table-muni-codisec {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
 }
 
 .table-container-image-standard {
@@ -1537,7 +1580,7 @@ ul li {
   justify-content: space-between;
   background-color: var(--muni-tono-azul-2);
   padding: 25px;
-  padding-bottom: 1px;
+  padding-bottom: 13px;
   padding-top: 35px;
 }
 
@@ -1545,12 +1588,33 @@ ul li {
   color: white;
 }
 
-.column-image {
-  width: calc(25% - 5px); /* Ancho de cada columna */
-  margin-bottom: 20px;
-}
-
 .links {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.audiencia-public,
+.separacion-convencional {
+  margin-top: 35px;
+}
+
+.codisec-mdca {
+  margin-top: 60px;
+}
+
+.column-image {
+  margin-left: 121px;
+  margin-right: 98px;
+}
+
+/* ================== SECTION TABLE IMAGES RELATIONAL ================== */
+.table-container-image-standard {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--muni-tono-azul-2);
+  padding: 25px;
+  padding-bottom: 13px;
+  padding-top: 35px;
 }
