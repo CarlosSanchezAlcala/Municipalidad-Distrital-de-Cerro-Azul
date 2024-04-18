@@ -38,7 +38,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== home Bottom ==========*/
+    /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -53,11 +53,6 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-
-    /*========= Paleta de colores Municipalidad de Cerro Azul =========*/
-    --muni-tono-azul-1: #00446B;
-    --muni-tono-azul-2: #015da8;
-
 }
 
 /* Font size for large devices */
@@ -147,6 +142,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
+  color: var(--title-color);
 }
 
 .section__subtitle {
@@ -181,9 +177,9 @@ img {
   background-color: var(--body-color);
 }
 
-/* *! ====================================== NAV ====================================== */
+/*==================== NAV ====================*/
 .nav{
-  max-width: 1500px;
+  max-width: 968px;
   height: var(--header-height);
   display: flex;
   justify-content:space-between;
@@ -194,7 +190,6 @@ img {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
 .nav_logo:hover{
   color: var(--first-color);
 }
@@ -263,7 +258,7 @@ img {
 
 /* Active link */
 .active-link{
-  color: var(--muni-tono-azul-2);
+  color: var(--first-color);
 }
 
 
@@ -273,32 +268,15 @@ img {
 }
 
 
-.subnav {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.subnav li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.subnav li:last-child {
-  border-bottom: none;
-}
-
 /*==================== HOME ====================*/
 .home {
-  background-image: url("../img/black.png");
+  background-image: url("../img/fondo.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 60rem;
   margin: 0px;
   gap: 1rem;
 }
@@ -308,9 +286,6 @@ img {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
-  text-align: center;
-  margin-left: 11rem;
-  margin-top: 17rem;
 }
 
 .home_social{
@@ -375,11 +350,10 @@ img {
 
 .home_scroll{
   display: none;
-  margin-left: 19rem;
 }
 
 .home_scroll-button{
-  margin-top: 7.2rem;
+  margin-top: -11rem;
   color: #ffffffea;
   transition:.3s;
 }
@@ -455,7 +429,11 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.about_img{
+  width: 230px;
+  border-radius:.5rem;
 
+}
 .about_description{
   text-align: center;
   margin-bottom: var(--mb-2-5);
@@ -974,8 +952,62 @@ color: var(--first-color);
   outline: none;
   padding: .25rem .5rem .5rem 0;
 }
+/*==================== FOOTER ====================*/
+.footer{
+  padding-top: 2rem;
+}
 
-/* *! ====================================== SCROLL UP ====================================== */
+.footer_container{
+  row-gap: 3.5rem;
+}
+
+.footer_bg{
+  background-color:var(--first-color);
+  
+}
+
+.footer_title{
+  font-size:var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer_subtitle{
+  font-size: var(--small-font-size);
+}
+
+.footer_links{
+  display:flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer_link:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer_social{
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer_social:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer_copy{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: #d8d3d3f3;
+  margin-top: var(--mb-3);
+}
+
+.footer_title,
+.footer_subtitle,
+.footer_link,
+.footer_social{
+  color: #FFF;
+}
+/*========== SCROLL UP ==========*/
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -1002,7 +1034,7 @@ color: var(--first-color);
   bottom: 5rem;
 }
 
-/* *! ====================================== SCROLL BAR ====================================== */
+/*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar{
   width:.70rem;
   background-color: var(--scroll-bar-color);
@@ -1018,8 +1050,8 @@ color: var(--first-color);
   background-color: var(--text-color-light);
 }
 
-/* *! ====================================== MEDIA QUERIES ====================================== */
-/*  *! ====================================== For small devices ====================================== */
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
 @media screen and (max-width: 768px) {
   .contact_container{
     margin-left:var(--mb-1);
@@ -1038,7 +1070,12 @@ color: var(--first-color);
   .home_blob{
     width: 190px;
   }
-
+  .about_img{
+    width: 270px;
+    border-radius:.5rem;
+    justify-self: center;
+    align-self: center;
+  }
   .skills_title{
     font-size: var(--normal-font-size);
   }
@@ -1073,7 +1110,7 @@ color: var(--first-color);
   }
 }
 
-/* *! ====================================== For medium devices ====================================== */
+/* For medium devices */
 @media only screen and (min-width: 568px){
   .home_content{
     grid-template-columns: max-content 1fr 1fr;
@@ -1081,7 +1118,6 @@ color: var(--first-color);
   .home_data{
     grid-column: initial;
   }
-
   .home_img{
     border: 1;
     justify-self: center;
@@ -1095,150 +1131,121 @@ color: var(--first-color);
   .footer_container{
     grid-template-columns: repeat(2, 1fr);
   }
-
   .qualification_sections{
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
   }
 }
-
 @media screen and (min-width:768px) {
   .container{
     margin-left: auto;
     margin-right: auto;
   }
-
   .body{
     margin: 0;
   }
-
   .section{
     padding: 6rem 0 2rem;
   }
-
   .section_subtitle{
     margin-bottom: 4rem;
   }
-
   .header{
     top: 0;
     bottom: initial;
   }
-
   .header,
   .main,
   .footer_container{
     padding: 0 1rem;
   }
-
   .nav{
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
   }
-
   .nav_icon,
   .nav_close,
   .nav_toggle{
     display: none;
   }
-
   .nav_list{
     display: flex;
     column-gap: 2rem;
   }
-
   .nav_menu{
     margin-left: auto;
   }
-
   .change-theme{
     margin: 0;
   }
-
   .home_container{
     row-gap: 5rem;
   }
-
   .home_content{
-    padding-top: 0rem;
+    padding-top: 5.5rem;
     column-gap: 2rem;
   }
-
   .home_blob{
     width: 290px;
   }
-
   .home_scroll{
     display: block;
   }
-
   .home_scroll-button{
     margin-left: 3rem;
   }
-
   .about_container{
     column-gap: 5rem;
-    margin-top: 2rem;
   }
-
+  .about_img{
+    width:350px;
+    border-radius:.5rem;
+    justify-self: center;
+    }
   .about_description{
     text-align:initial;
   }
-
   .about_info{
     justify-content: space-between;
   }
-
   .about_buttons{
     justify-content: initial;
   }
-
   .qualification_tabs{
     justify-content: center;
   }
-
   .qualification_button{
     margin: 0 var(--mb-1);
   }
-
   .qualification_sections{
     grid-template-columns: .5fr;
   }
-
   /*.services_container{
     grid-template-columns: repeat(3, 128px);
     justify-content: center;
   }*/
-
   .services_icon{
     font-size: 2rem;
   }
-
   .services_content{
     padding: 6rem 0 2rem 2.5rem;
   }
-
   .services_modal-content{
     width: 450px;
   }
-  
   .portfolio-img{
     width: 320px;
   }
-
   .portfolio_content{
     align-items: center;
   }
-
   .project{
     text-align:initial;
   }
-
   .project_bg{
     background:none;
   }
-
   .project_container{
     background-color: var(--first-color-second);
     border-radius: 1rem;
@@ -1246,35 +1253,29 @@ color: var(--first-color);
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
-
   .project_data{
     padding-top: .8rem;
   }
-
   .footer_container{
     grid-template-columns: repeat(3, 1fr);
   }
-
   .footer_bg{
     padding: 3rem 0 3.5rem;
   }
-
   .footer_links{
     flex-direction: row;
     column-gap: 2rem;
   }
-
   .footer_socials{
     justify-self: flex-end;
   }
-
   .footer_copy{
     margin-top: 4.5rem;
   }
 }
 
 
-/* *! ====================================== For large devices ====================================== */
+/* For large devices */
 @media screen  and (min-width: 1024px){
   .header,
   .main,
@@ -1313,206 +1314,10 @@ color: var(--first-color);
   }
 }
 
-/* *! ================================= HEADER LINKS AND ICON ================================= */
 .icon_image {
-  width: 5%; /* *TODO Ancho de la imagen */
-  height: 5%; /* *TODO Alto de la imagen */
-  border-radius: 50%; /* *TODO Para hacer que la imagen sea un círculo */
-  margin-right: 8px; /* *TODO Espacio entre la imagen y el texto */
-  vertical-align: middle; /* *TODO Alinea la imagen verticalmente con el texto */
-}
-
-.intranet_color {
-  color: #c78c62;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* *TODO Ajusta la altura según sea necesario */
-  width: 100%; /* *TODO Cubrir el ancho completo */
-  background-color: #015da8;
-}
-
-.footer_muni {
-  height: 10rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* *TODO Centrar verticalmente */
-}
-
-.footer_description {
-  margin: 0;
-  color: white;
-  font-size: 15px;
-}
-
-.footer_description_verificator {
-  margin: 0;
-  color: white;
-  font-size: 12px;
-}
-
-.table-container {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.column {
-  width: calc(33.33% - 20px); /* *TODO Ancho de cada columna */
-}
-
-.column-header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 20px;
-}
-
-/* *! ====================================== Estilos específicos para dispositivos móviles ====================================== */
-@media only screen and (max-width: 600px) {
-  .column,
-  .column-image,
-  .column-icons {
-      width: 100%; /* *TODO Cambia el ancho a 100% para que se apilen */
-  }
-}
-
-.links-muni-page a {
-  color: #6A6D7C;
-}
-
-.img-table-muni {
-  width: 100%; /* *TODO Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
-  max-width: 215px; /* *TODO Establecer un ancho máximo para mantener el tamaño original de la imagen */
-  display: block; /* *TODO Hacer que las imágenes sean elementos de bloque */
-  margin: 0 auto; /* *TODO Centrar horizontalmente las imágenes */
-}
-
-.img-table-muni-audiencia {
-  width: 100%;
-  max-width: 215px;
-  display: block;
-  margin: 0 auto;
-}
-
-.img-table-muni-separacion {
-  width: 100%;
-  max-width: 215px;
-  display: block;
-  margin: 0 auto;
-}
-
-.img-table-muni-codisec {
-  width: 100%;
-  max-width: 215px;
-  display: block;
-  margin: 0 auto;
-}
-
-.table-container-image-standard {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: var(--muni-tono-azul-2);
-  padding: 25px;
-  padding-bottom: 13px;
-  padding-top: 35px;
-}
-
-.text-100-dias-description {
-  color: white;
-}
-
-.links {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.audiencia-public,
-.separacion-convencional {
-  margin-top: 35px;
-}
-
-.codisec-mdca {
-  margin-top: 60px;
-}
-
-.column-image,
-.column-icons {
-  margin-left: 121px;
-  margin-right: 98px;
-}
-
-/* *! ====================================== SECTION TABLE IMAGES RELATIONAL ====================================== */
-.table-container-image-standard {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: var(--muni-tono-azul-2);
-  padding: 25px;
-  padding-bottom: 13px;
-  padding-top: 35px;
-}
-
-/* *! ====================================== SECTION INFORMATION ALCALDE (IMAGEN - FOTOGRAFÍA DEL ALCALDE) ====================================== */
-.image-container {
-  perspective: 1000px; /* *TODO: Define la perspectiva para el efecto 3D */
-  display: inline-block;
-}
-
-.image-container img {
-  transition: transform 0.5s; /* *TODO: Transición suave de la transformación */
-}
-
-.image-container:hover img {
-  transform: scale(1.1); /* *TODO: Escala la imagen al 110% al pasar el mouse */
-}
-
-.about_img {
-  width: 245px;
-  margin: -80px;
-  margin-left: -110px;
-  justify-self: center;
-}
-
-/* *! ====================================== SECTION ICONS ACCESS ====================================== */
-.container-icon-access {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: var(--muni-tono-azul-2);
-}
-
-.img-table-muni-rentas,
-.img-table-muni-consulta-tributaria,
-.img-table-muni-tramites-obras,
-.img-table-muni-obras {
-  width: 90px;
-  margin: 20px;
-}
-
-.column-icons p {
-  color: white;
-  font-weight: bold;
-}
-
-.about {
-  background-color: #015da8;
+  width: 30px; /* Ancho de la imagen */
+  height: 30px; /* Alto de la imagen */
+  border-radius: 50%; /* Para hacer que la imagen sea un círculo */
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+  vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
 }
