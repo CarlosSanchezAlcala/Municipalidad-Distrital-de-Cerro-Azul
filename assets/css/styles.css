@@ -297,13 +297,13 @@ img {
 
 /*==================== HOME ====================*/
 .home {
-  background-image: url("../img/");
+  background-image: url("../img/black.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 61.91rem;
+  height: 100vh;
   margin: 0px;
   gap: 1rem;
 }
@@ -384,7 +384,7 @@ img {
 }
 
 .home_scroll-button{
-  margin-top: 10rem;
+  margin-top: 7.2rem;
   color: #ffffffea;
   transition:.3s;
 }
@@ -979,64 +979,8 @@ color: var(--first-color);
   outline: none;
   padding: .25rem .5rem .5rem 0;
 }
-/*==================== FOOTER ====================
-.footer{
-  padding-top: 2rem;
-}
 
-.footer_container{
-  row-gap: 3.5rem;
-}
-
-.footer_bg{
-  background-color:var(--first-color);
-  
-}
-
-.footer_title{
-  font-size:var(--h1-font-size);
-  margin-bottom: var(--mb-0-25);
-}
-
-.footer_subtitle{
-  font-size: var(--small-font-size);
-}
-
-.footer_links{
-  display:flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
-}
-
-.footer_link:hover{
-  color: var(--first-color-lighter);
-}
-
-.footer_social{
-  font-size: 1.25rem;
-  margin-right: var(--mb-1-5);
-}
-
-.footer_social:hover{
-  color: var(--first-color-lighter);
-}
-
-.footer_copy{
-  font-size: var(--smaller-font-size);
-  text-align: center;
-  color: #d8d3d3f3;
-  margin-top: var(--mb-3);
-}
-
-.footer_title,
-.footer_subtitle,
-.footer_link,
-.footer_social{
-  color: #FFF;
-}
-*/
-
-/*========== SCROLL UP ==========*/
+/* *! ====================================== SCROLL UP ====================================== */
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -1063,7 +1007,7 @@ color: var(--first-color);
   bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+/* *! ====================================== SCROLL BAR ====================================== */
 ::-webkit-scrollbar{
   width:.70rem;
   background-color: var(--scroll-bar-color);
@@ -1079,8 +1023,8 @@ color: var(--first-color);
   background-color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/* *! ====================================== MEDIA QUERIES ====================================== */
+/*  *! ====================================== For small devices ====================================== */
 @media screen and (max-width: 768px) {
   .contact_container{
     margin-left:var(--mb-1);
@@ -1134,7 +1078,7 @@ color: var(--first-color);
   }
 }
 
-/* For medium devices */
+/* *! ====================================== For medium devices ====================================== */
 @media only screen and (min-width: 568px){
   .home_content{
     grid-template-columns: max-content 1fr 1fr;
@@ -1246,46 +1190,60 @@ color: var(--first-color);
   .about_description{
     text-align:initial;
   }
+
   .about_info{
     justify-content: space-between;
   }
+
   .about_buttons{
     justify-content: initial;
   }
+
   .qualification_tabs{
     justify-content: center;
   }
+
   .qualification_button{
     margin: 0 var(--mb-1);
   }
+
   .qualification_sections{
     grid-template-columns: .5fr;
   }
+
   /*.services_container{
     grid-template-columns: repeat(3, 128px);
     justify-content: center;
   }*/
+
   .services_icon{
     font-size: 2rem;
   }
+
   .services_content{
     padding: 6rem 0 2rem 2.5rem;
   }
+
   .services_modal-content{
     width: 450px;
   }
+  
   .portfolio-img{
     width: 320px;
   }
+
   .portfolio_content{
     align-items: center;
   }
+
   .project{
     text-align:initial;
   }
+
   .project_bg{
     background:none;
   }
+
   .project_container{
     background-color: var(--first-color-second);
     border-radius: 1rem;
@@ -1293,29 +1251,35 @@ color: var(--first-color);
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
+
   .project_data{
     padding-top: .8rem;
   }
+
   .footer_container{
     grid-template-columns: repeat(3, 1fr);
   }
+
   .footer_bg{
     padding: 3rem 0 3.5rem;
   }
+
   .footer_links{
     flex-direction: row;
     column-gap: 2rem;
   }
+
   .footer_socials{
     justify-self: flex-end;
   }
+
   .footer_copy{
     margin-top: 4.5rem;
   }
 }
 
 
-/* For large devices */
+/* *! ====================================== For large devices ====================================== */
 @media screen  and (min-width: 1024px){
   .header,
   .main,
@@ -1362,18 +1326,6 @@ color: var(--first-color);
   vertical-align: middle; /* *TODO Alinea la imagen verticalmente con el texto */
 }
 
-/*
-.body-municipality {
-  background-color: antiquewhite;
-}
-*/
-
-.container-icon-access {
-  width: 100%; /* *TODO Ancho del cuadrado */
-  height: 110px; /* *TODO Alto del cuadrado */
-  background-color: #015da8; /* *TODO Color de fondo del cuadrado */
-}
-
 .intranet_color {
   color: #c78c62;
 }
@@ -1393,7 +1345,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centrar verticalmente */
+  align-items: center; /* *TODO Centrar verticalmente */
 }
 
 .footer_description {
@@ -1408,98 +1360,6 @@ footer {
   font-size: 12px;
 }
 
-
-/*
-========================
-
-.links_inter,
-.publics_obras,
-.links_externs,
-.contacts,
-.transparence {
-  color: black;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.links_externs,
-.contacts,
-.transparence {
-  text-align: center;
-}
-
-.table_links_muni {
-  text-align: center;
-  width: 100%; /* Ancho máximo de la tabla
-  border-collapse: separate; /* Fusionar bordes de celdas
-  margin-bottom: 20px; /* Margen inferior para separar la tabla del contenido siguiente
-  border-spacing: 27px;
-}
-
-.table_links_muni th {
-  /* background-color: #015da8;  Color de fondo de las celdas de cabecera */
-  /* color: white;  Color del texto de las celdas de cabecera */
-  /* font-size: 15px;  Tamaño de la fuente de las celdas de cabecera
-  padding: 10px; /* Espaciado interno de las celdas de cabecera
-}
-
-/*
-.table_links_muni tbody tr:nth-child(odd) {
-  background-color: #c78c62; ============== Color de fondo alternativo ==============
-}
-
-
-.table_links_muni a {
-  color: #6A6D7C;
-}
-
-.img-table-muni {
-  width: 184.18px;
-}
-
-.table_images_muni td {
-  text-align: center;
-}
-
-.table_images_muni {
-  text-align: center;
-  width: 100%;
-}
-
-.text-100-dias {
-  font-family: 'Sansita Swashed', display;
-}
-
-.images-table {
-  background-color: var(--muni-tono-azul-2);
-  padding: 25px;
-}
-
-.text-100-dias-description {
-  color: white;
-}
-
-/* Estilos adicionales para dispositivos móviles
-@media only screen and (max-width: 600px) {
-
-  /* Alinear el texto de las celdas al centro
-  .table_links_muni td {
-    text-align: center;
-  }
-
-  /* Espacio entre filas
-  .table_links_muni tbody tr {
-    margin-bottom: 10px;
-  }
-
-  /* Ajustar tamaño del texto
-  .table_links_muni a {
-    font-size: 14px;
-  }
-}
-*/
-
 .table-container {
   text-align: center;
   display: flex;
@@ -1508,7 +1368,7 @@ footer {
 }
 
 .column {
-  width: calc(33.33% - 20px); /* Ancho de cada columna */
+  width: calc(33.33% - 20px); /* *TODO Ancho de cada columna */
 }
 
 .column-header {
@@ -1529,8 +1389,9 @@ ul li {
 /* *! ====================================== Estilos específicos para dispositivos móviles ====================================== */
 @media only screen and (max-width: 600px) {
   .column,
-  .column-image {
-      width: 100%; /* Cambia el ancho a 100% para que se apilen */
+  .column-image,
+  .column-icons {
+      width: 100%; /* *TODO Cambia el ancho a 100% para que se apilen */
   }
 }
 
@@ -1539,10 +1400,10 @@ ul li {
 }
 
 .img-table-muni {
-  width: 100%; /* Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
-  max-width: 215px; /* Establecer un ancho máximo para mantener el tamaño original de la imagen */
-  display: block; /* Hacer que las imágenes sean elementos de bloque */
-  margin: 0 auto; /* Centrar horizontalmente las imágenes */
+  width: 100%; /* *TODO Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
+  max-width: 215px; /* *TODO Establecer un ancho máximo para mantener el tamaño original de la imagen */
+  display: block; /* *TODO Hacer que las imágenes sean elementos de bloque */
+  margin: 0 auto; /* *TODO Centrar horizontalmente las imágenes */
 }
 
 .img-table-muni-audiencia {
@@ -1595,7 +1456,8 @@ ul li {
   margin-top: 60px;
 }
 
-.column-image {
+.column-image,
+.column-icons {
   margin-left: 121px;
   margin-right: 98px;
 }
@@ -1629,31 +1491,27 @@ ul li {
 .about_img {
   width: 245px;
   margin: -80px;
+  margin-left: -110px;
   justify-self: center;
 }
 
-.container-falling {
-  position: relative;
-  height: 200px; /* Altura del contenedor */
-  overflow: hidden; /* Oculta el desbordamiento */
-}
-
-.falling-text {
-  position: absolute;
-  top: -50px; /* Inicia arriba del contenedor */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Centra horizontalmente */
+/* *! ====================================== SECTION ICONS ACCESS ====================================== */
+.container-icon-access {
+  text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--muni-tono-azul-2);
 }
 
-.falling-text span {
-  opacity: 0; /* Inicialmente, las letras son invisibles */
-  animation: fall 1s ease forwards; /* Animación de caída */
+.img-table-muni-rentas,
+.img-table-muni-consulta-tributaria,
+.img-table-muni-tramites-obras,
+.img-table-muni-obras {
+  width: 90px;
+  margin: 20px;
 }
 
-@keyframes fall {
-  to {
-      opacity: 1; /* Hace visible la letra cuando llega */
-  }
+.column-icons p {
+  color: white;
 }
