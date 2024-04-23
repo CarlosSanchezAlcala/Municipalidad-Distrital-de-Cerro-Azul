@@ -454,7 +454,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/*==================== ABOUT ====================*/
+/* *! ================================= ABOUT ================================= */
 
 .about_description{
   text-align: center;
@@ -1275,7 +1275,7 @@ color: var(--first-color);
 
 
 /* *! ====================================== For large devices ====================================== */
-@media screen  and (min-width: 1024px){
+@media screen  and (min-width: 768px){
   .header,
   .main,
   .footer_container{
@@ -1438,6 +1438,7 @@ ul li {
   color: white;
 }
 
+/* *! ====================================== ESPACIADO ENTRE LAS SECCIONES - OPCIONAL ====================================== */
 .links {
   margin-top: 50px;
   margin-bottom: 50px;
