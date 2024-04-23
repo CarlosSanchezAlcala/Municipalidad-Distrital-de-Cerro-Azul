@@ -913,3 +913,11 @@ ul li.links-help {
 .codisec-mdca {
   margin-top: 60px;
 }
+
+/* *! *! ================================= FOOTER ================================= */
+.icon_image_escudo_muni {
+  position: absolute;
+  width: 400px;
+  margin-left: 870px;
+  margin-top: -180px;
+}
