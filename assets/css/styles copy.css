@@ -824,8 +824,8 @@ img {
 /* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
 @media only screen and (min-width: 601px) {
   .column {
-    width: calc(33.33% - 20px); /* Restablecer el ancho de las columnas en pantallas más grandes */
-    /* Se puede ajustar según el diseño deseado */
+    width: calc(33.33% - 20px); /* *TODO: Restablecer el ancho de las columnas en pantallas más grandes */
+    /* *TODO: Se puede ajustar según el diseño deseado */
   }
 }
 
