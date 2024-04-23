@@ -274,7 +274,7 @@ img {
 
 /* Active link */
 .active-link{
-  color: var(--first-color);
+  color: var(--muni-tono-azul-1);
 }
 
 
@@ -583,6 +583,12 @@ img {
 /* *! ================================= MEDIA QUERIES ================================= */
 /* *! ================================= For small devices ================================= */
 @media screen and (max-width: 768px) {
+  .column,
+  .column-icons,
+  .column-image {
+    width: 100%;
+  }
+
   .nav_menu{
     padding: 2rem .25rem 4rem;
   }
@@ -605,6 +611,9 @@ img {
 
 /* *! ================================= For medium devices ================================= */
 @media only screen and (min-width: 568px){
+  .column{
+    width: 100%;
+  }
   .home_content{
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -813,6 +822,13 @@ img {
 }
 
 /* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
+@media only screen and (min-width: 601px) {
+  .column {
+    width: calc(33.33% - 20px); /* Restablecer el ancho de las columnas en pantallas más grandes */
+    /* Se puede ajustar según el diseño deseado */
+  }
+}
+
 .links {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -835,10 +851,6 @@ img {
   margin-bottom: 25px;
 }
 
-.column {
-  width: calc(33.33% - 20px); /* *TODO Ancho de cada columna */
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -846,4 +858,58 @@ ul {
 
 ul li.links-help {
   margin-bottom: 20px;
+}
+
+/* *! ====================================== SECTION - IMAGE STANDARD (IMAGENES CON LINKS) ====================================== */
+.table-container-image-standard {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--muni-tono-azul-2);
+  padding: 25px;
+  padding-bottom: 13px;
+  padding-top: 35px;
+}
+
+.column-image {
+  margin-left: 121px;
+  margin-right: 98px;
+}
+
+.img-table-muni {
+  width: 100%; /* *TODO Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
+  max-width: 215px; /* *TODO Establecer un ancho máximo para mantener el tamaño original de la imagen */
+  display: block; /* *TODO Hacer que las imágenes sean elementos de bloque */
+  margin: 0 auto; /* *TODO Centrar horizontalmente las imágenes */
+}
+
+.img-table-muni-audiencia {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-table-muni-separacion {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-table-muni-codisec {
+  width: 100%;
+  max-width: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+.audiencia-public,
+.separacion-convencional {
+  margin-top: 35px;
+}
+
+.codisec-mdca {
+  margin-top: 60px;
 }
