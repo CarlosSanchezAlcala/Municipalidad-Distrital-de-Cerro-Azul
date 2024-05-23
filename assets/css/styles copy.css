@@ -851,7 +851,7 @@ img {
   }
 
   .home {
-    background-image: url("../img/fondoMuelleAzulMoviles.jpg");
+    background-image: url("../img/fondoMuelleAzulMovilesSegundaOpcion.jpg");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -890,7 +890,9 @@ img {
 
   .container-falling-municipalidad span {
     font-size: 3em;
-    color: var(--muni-tono-azul-1);
+    color: white;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 2.3px;
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
@@ -898,20 +900,24 @@ img {
 
   .container-falling-distrital-de span {
     font-size: 3em;
-    color: var(--muni-tono-azul-1);
+    color: white;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 2.3px;
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
-    margin-top: 0.2em;
+    margin-top: 0.4em;
   }
 
   .container-falling-cerro-azul span {
     font-size: 3em;
-    color: var(--muni-tono-azul-1);
+    color: white;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 2.3px;
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
-    margin-top: 0.2em;
+    margin-top: 0.4em;
   }
 }
 
