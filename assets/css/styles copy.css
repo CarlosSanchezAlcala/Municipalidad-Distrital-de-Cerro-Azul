@@ -842,6 +842,10 @@ img {
     width: 100%;
   }
 
+  .home_scroll {
+    display: block;
+  }
+
   .nav_menu {
     padding: 2rem .25rem 4rem;
   }
@@ -889,7 +893,7 @@ img {
   }
 
   .container-falling-municipalidad span {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     font-family: "Bree Serif", serif;
     letter-spacing: 2.3px;
@@ -899,25 +903,25 @@ img {
   }
 
   .container-falling-distrital-de span {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     font-family: "Bree Serif", serif;
     letter-spacing: 2.3px;
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
-    margin-top: 0.4em;
+    margin-top: 1em;
   }
 
   .container-falling-cerro-azul span {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     font-family: "Bree Serif", serif;
     letter-spacing: 2.3px;
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
-    margin-top: 0.4em;
+    margin-top: 1em;
   }
 }
 
