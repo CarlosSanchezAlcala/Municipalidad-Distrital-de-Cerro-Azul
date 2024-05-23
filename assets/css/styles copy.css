@@ -299,13 +299,15 @@ img {
 
 /* *! ================================= HOME ================================= */
 .home {
-  background-image: url("../img/glorietaOpacidad.png");
+  background-image: url("../img/fondoMuelleAzul.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 60rem;
+  max-height: 957px;
+  min-height: 957px;
   margin: 0px;
   gap: 1rem;
 }
@@ -419,7 +421,9 @@ img {
 
 .container-falling-municipalidad span {
   font-size: 6em;
-  color: var(--muni-tono-azul-1);
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
+  color: white;
   font-weight: bold;
   opacity: 0;
   animation: drop 0.4s linear forwards;
@@ -482,11 +486,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -2.5em;
 }
 
 .container-falling-distrital-de span {
   font-size: 6em;
-  color: var(--muni-tono-azul-1);
+  color: white;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
   animation: drop 0.4s linear forwards;
@@ -549,11 +556,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -2.5em;
 }
 
 .container-falling-cerro-azul span {
   font-size: 6em;
-  color: var(--muni-tono-azul-1);
+  color: white;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
   animation: drop 0.4s linear forwards;
@@ -841,13 +851,14 @@ img {
   }
 
   .home {
-    background-image: url("../img/black.png");
+    background-image: url("../img/fondoMuelleAzulMoviles.jpg");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     height: 60rem;
+    max-height: 844px;
     margin: 0px;
     gap: 1rem;
   }
@@ -891,8 +902,17 @@ img {
     font-weight: bold;
     opacity: 0;
     animation: drop 0.4s linear forwards;
+    margin-top: 0.2em;
   }
 
+  .container-falling-cerro-azul span {
+    font-size: 3em;
+    color: var(--muni-tono-azul-1);
+    font-weight: bold;
+    opacity: 0;
+    animation: drop 0.4s linear forwards;
+    margin-top: 0.2em;
+  }
 }
 
 /* *! ================================= For medium devices ================================= */
