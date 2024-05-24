@@ -310,6 +310,7 @@ img {
   min-height: 957px;
   margin: 0px;
   gap: 1rem;
+  position: fixed;
 }
 
 .home_content {
@@ -382,10 +383,6 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.home_scroll {
-  display: none;
-}
-
 .home_scroll-button {
   margin-top: -11rem;
   color: #ffffffea;
@@ -420,7 +417,7 @@ img {
 }
 
 .container-falling-municipalidad span {
-  font-size: 6em;
+  font-size: 4em;
   font-family: "Bree Serif", serif;
   letter-spacing: 5px;
   color: white;
@@ -486,11 +483,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -2.5em;
+  margin-top: -2em;
 }
 
 .container-falling-distrital-de span {
-  font-size: 6em;
+  font-size: 4em;
   color: white;
   font-family: "Bree Serif", serif;
   letter-spacing: 5px;
@@ -556,11 +553,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -2.5em;
+  margin-top: -2em;
 }
 
 .container-falling-cerro-azul span {
-  font-size: 6em;
+  font-size: 4em;
   color: white;
   font-family: "Bree Serif", serif;
   letter-spacing: 5px;
@@ -730,19 +727,19 @@ img {
 }
 
 .home_data_pain span:nth-child(1) {
-  animation-delay: 8s;
+  animation-delay: 8.8s;
 }
 
 .home_data_pain span:nth-child(2) {
-  animation-delay: 8.2s;
+  animation-delay: 9s;
 }
 
 .home_data_pain span:nth-child(3) {
-  animation-delay: 8.4s;
+  animation-delay: 9.2s;
 }
 
 .home_data_pain span:nth-child(4) {
-  animation-delay: 8.6s;
+  animation-delay: 9.4s;
 }
 
 @keyframes painDrop {
@@ -792,27 +789,27 @@ img {
 }
 
 .home_data_garcia span:nth-child(1) {
-  animation-delay: 8s;
+  animation-delay: 9.6s;
 }
 
 .home_data_garcia span:nth-child(2) {
-  animation-delay: 8.2s;
+  animation-delay: 9.8s;
 }
 
 .home_data_garcia span:nth-child(3) {
-  animation-delay: 8.4s;
+  animation-delay: 10s;
 }
 
 .home_data_garcia span:nth-child(4) {
-  animation-delay: 8.6s;
+  animation-delay: 10.2s;
 }
 
 .home_data_garcia span:nth-child(5) {
-  animation-delay: 8.4s;
+  animation-delay: 10.4s;
 }
 
 .home_data_garcia span:nth-child(6) {
-  animation-delay: 8.6s;
+  animation-delay: 10.6s;
 }
 
 @keyframes garciaDrop {
@@ -1037,7 +1034,11 @@ img {
   }
 
   .home_scroll {
-    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
   }
 
   .nav_menu {
@@ -1320,6 +1321,28 @@ img {
     padding-bottom: 13px;
     padding-top: 35px;
   }
+
+  /* *! ====================================== CÓDIGO PERTENECIENTE A ("home")  ====================================== */
+  .container-falling-municipalidad span {
+    -webkit-text-stroke: 0.01px black;
+  }
+
+  .container-falling-distrital-de {
+    -webkit-text-stroke: 0.01px black;
+  }
+
+  .container-falling-cerro-azul {
+    -webkit-text-stroke: 0.01px black;
+  }
+
+  .home_scroll {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+  }
+
 }
 
 /* *! ====================================== ICON IMAGE NAV_BAR ====================================== */
