@@ -649,7 +649,7 @@ img {
   }
 }
 
-.home_data {
+.home_data_jose {
   position: relative;
   display: flex;
   align-items: center;
@@ -657,83 +657,35 @@ img {
   margin-top: -2.5em;
 }
 
-.home_data span {
+.home_data_jose span {
   font-size: 6em;
   color: white;
   font-family: "Bree Serif", serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
-  animation: drop 0.4s linear forwards;
+  animation: joseDrop 0.4s linear forwards;
 }
 
-.home_data span:nth-child(1) {
+.home_data_jose span:nth-child(1) {
   animation-delay: 8s;
 }
 
-.home_data span:nth-child(2) {
+.home_data_jose span:nth-child(2) {
   animation-delay: 8.2s;
 }
 
-.home_data span:nth-child(3) {
+.home_data_jose span:nth-child(3) {
   animation-delay: 8.4s;
 }
 
-.home_data span:nth-child(4) {
+.home_data_jose span:nth-child(4) {
   animation-delay: 8.6s;
 }
 
-.home_data span:nth-child(5) {
-  animation-delay: 8.8s;
-}
-
-.home_data span:nth-child(6) {
-  animation-delay: 9s;
-}
-
-.home_data span:nth-child(7) {
-  animation-delay: 9.2s;
-}
-
-.home_data span:nth-child(8) {
-  animation-delay: 9.4s;
-}
-
-.home_data span:nth-child(9) {
-  animation-delay: 9.6s;
-}
-
-.home_data span:nth-child(10) {
-  animation-delay: 9.8s;
-}
-
-.home_data span:nth-child(11) {
-  animation-delay: 10s;
-}
-
-.home_data span:nth-child(12) {
-  animation-delay: 10.2s;
-}
-
-.home_data span:nth-child(13) {
-  animation-delay: 10.4s;
-}
-
-.home_data span:nth-child(14) {
-  animation-delay: 10.6s;
-}
-
-.home_data span:nth-child(15) {
-  animation-delay: 10.8s;
-}
-
-.home_data span:nth-child(16) {
-  animation-delay: 11s;
-}
-
-@keyframes drop {
+@keyframes joseDrop {
   0% {
-    transform: translateY(-200px) scaleY(0.9);
+    transform: translateX(-200px) scaleX(0.9);
   }
 
   5% {
@@ -741,20 +693,152 @@ img {
   }
 
   50% {
-    transform: translateY(0px) scaleY(1);
+    transform: translateX(0px) scaleX(1);
     opacity: 1;
   }
 
   65% {
-    transform: translateY(-17px) scaleY(0.9);
+    transform: translateX(-17px) scaleX(0.9);
   }
 
   75% {
-    transform: translateY(-22px) scaleY(0.9);
+    transform: translateX(-22px) scaleX(0.9);
   }
 
   100% {
-    transform: translateY(0px) scaleY(1);
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+}
+
+.home_data_pain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2.5em;
+}
+
+.home_data_pain span {
+  font-size: 6em;
+  color: white;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  opacity: 0;
+  animation: painDrop 0.4s linear forwards;
+}
+
+.home_data_pain span:nth-child(1) {
+  animation-delay: 8s;
+}
+
+.home_data_pain span:nth-child(2) {
+  animation-delay: 8.2s;
+}
+
+.home_data_pain span:nth-child(3) {
+  animation-delay: 8.4s;
+}
+
+.home_data_pain span:nth-child(4) {
+  animation-delay: 8.6s;
+}
+
+@keyframes painDrop {
+  0% {
+    transform: translateX(200px) scaleX(0.9);
+  }
+
+  5% {
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+
+  65% {
+    transform: translateX(17px) scaleX(0.9);
+  }
+
+  75% {
+    transform: translateX(22px) scaleX(0.9);
+  }
+
+  100% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+}
+
+.home_data_garcia {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2.5em;
+}
+
+.home_data_garcia span {
+  font-size: 6em;
+  color: white;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  opacity: 0;
+  animation: garciaDrop 0.4s linear forwards;
+}
+
+.home_data_garcia span:nth-child(1) {
+  animation-delay: 8s;
+}
+
+.home_data_garcia span:nth-child(2) {
+  animation-delay: 8.2s;
+}
+
+.home_data_garcia span:nth-child(3) {
+  animation-delay: 8.4s;
+}
+
+.home_data_garcia span:nth-child(4) {
+  animation-delay: 8.6s;
+}
+
+.home_data_garcia span:nth-child(5) {
+  animation-delay: 8.4s;
+}
+
+.home_data_garcia span:nth-child(6) {
+  animation-delay: 8.6s;
+}
+
+@keyframes garciaDrop {
+  0% {
+    transform: translateX(-200px) scaleX(0.9);
+  }
+
+  5% {
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+
+  65% {
+    transform: translateX(-17px) scaleX(0.9);
+  }
+
+  75% {
+    transform: translateX(-22px) scaleX(0.9);
+  }
+
+  100% {
+    transform: translateX(0px) scaleX(1);
     opacity: 1;
   }
 }
