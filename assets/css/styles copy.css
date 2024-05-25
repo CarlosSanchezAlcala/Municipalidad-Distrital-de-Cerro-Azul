@@ -318,6 +318,7 @@ img {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+  display: flex;
 }
 
 .home_social {
@@ -418,7 +419,7 @@ img {
 
 .container-falling-municipalidad span {
   font-size: 4em;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   color: white;
   font-weight: bold;
@@ -483,13 +484,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -2em;
 }
 
 .container-falling-distrital-de span {
   font-size: 4em;
   color: white;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
@@ -553,13 +553,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -2em;
 }
 
 .container-falling-cerro-azul span {
   font-size: 4em;
   color: white;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
@@ -657,7 +656,7 @@ img {
 .home_data_jose span {
   font-size: 6em;
   color: white;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
@@ -719,7 +718,7 @@ img {
 .home_data_pain span {
   font-size: 6em;
   color: white;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
@@ -781,7 +780,7 @@ img {
 .home_data_garcia span {
   font-size: 6em;
   color: white;
-  font-family: "Bree Serif", serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   opacity: 0;
@@ -1089,34 +1088,16 @@ img {
 
   .container-falling-municipalidad span {
     font-size: 2em;
-    color: white;
-    font-family: "Bree Serif", serif;
-    letter-spacing: 2.3px;
-    font-weight: bold;
-    opacity: 0;
-    animation: drop 0.4s linear forwards;
   }
 
   .container-falling-distrital-de span {
     font-size: 2em;
-    color: white;
-    font-family: "Bree Serif", serif;
-    letter-spacing: 2.3px;
-    font-weight: bold;
-    opacity: 0;
-    animation: drop 0.4s linear forwards;
-    margin-top: 1em;
+    margin-top: -0.1em;
   }
 
   .container-falling-cerro-azul span {
     font-size: 2em;
-    color: white;
-    font-family: "Bree Serif", serif;
-    letter-spacing: 2.3px;
-    font-weight: bold;
-    opacity: 0;
-    animation: drop 0.4s linear forwards;
-    margin-top: 1em;
+    margin-top: -0.1em;
   }
 }
 
@@ -1199,7 +1180,10 @@ img {
   }
 
   .home_container {
-    row-gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
   }
 
   .home_content {
@@ -1328,11 +1312,13 @@ img {
   }
 
   .container-falling-distrital-de {
-    -webkit-text-stroke: 0.01px black;
+    /* -webkit-text-stroke: 0.01px black; */
+    margin-top: 0.01em
   }
 
   .container-falling-cerro-azul {
-    -webkit-text-stroke: 0.01px black;
+    /* -webkit-text-stroke: 0.01px black; */
+    margin-top: 0.01em;
   }
 
   .home_scroll {
