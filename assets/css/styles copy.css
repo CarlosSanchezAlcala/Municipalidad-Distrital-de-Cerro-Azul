@@ -318,7 +318,6 @@ img {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
-  display: flex;
 }
 
 .home_social {
@@ -1032,12 +1031,16 @@ img {
     width: 100%;
   }
 
+  .home_container {
+    margin-top: 5em;
+  }
+
   .home_scroll {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15em;
+    margin-top: 25em;
   }
 
   .nav_menu {
@@ -1059,22 +1062,6 @@ img {
     max-height: 844px;
     margin: 0px;
     gap: 1rem;
-  }
-
-  .home_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8em;
-  }
-
-  .home_content {
-    color: #FFF;
-    grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
-    align-items: center;
-    display: flex;
-    grid-template-columns: .25fr 3fr;
   }
 
   .home_blob {
@@ -1129,7 +1116,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2.5em;
+    margin-top: 10em;
   }
 
   .home_data_pain {
@@ -1137,7 +1124,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2.5em;
+    margin-top: 0.5em;
   }
 
   .home_data_garcia {
@@ -1145,7 +1132,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2.5em;
+    margin-top: 1em;
   }
 
 }
