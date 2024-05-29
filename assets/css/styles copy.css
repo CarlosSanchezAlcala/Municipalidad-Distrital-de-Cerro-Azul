@@ -298,19 +298,6 @@ img {
 
 
 /* *! ================================= HOME ================================= */
-.home {
-  background-image: url("../img/fondoMuelleAzul.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  gap: 1rem;
-  position: fixed;
-}
-
 .home_content {
   color: #FFF;
   grid-template-columns: .5fr 3fr;
@@ -1309,6 +1296,19 @@ img {
   .main,
   .footer_container {
     padding: 0;
+  }
+
+  .home {
+    background-image: url("../img/fondoMuelleAzul.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    gap: 1rem;
+    position: fixed;
   }
 
   .home_container {
