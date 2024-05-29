@@ -1313,6 +1313,11 @@ img {
     padding: 0;
   }
 
+  .home_container {
+    margin-top: 12em;
+  }
+
+
   .home_blob {
     width: 350px;
   }
@@ -1362,17 +1367,17 @@ img {
 
   /* *! ====================================== CÓDIGO PERTENECIENTE A ("home")  ====================================== */
   .container-falling-municipalidad span {
-    -webkit-text-stroke: 0.01px black;
+    font-size: 1.5em;
   }
 
-  .container-falling-distrital-de {
-    /* -webkit-text-stroke: 0.01px black; */
-    margin-top: 0.01em
+  .container-falling-distrital-de span {
+    font-size: 1.5em;
+    margin-top: -0.1em;
   }
 
-  .container-falling-cerro-azul {
-    /* -webkit-text-stroke: 0.01px black; */
-    margin-top: 0.01em;
+  .container-falling-cerro-azul span {
+    font-size: 1.5em;
+    margin-top: -0.1em;
   }
 
   .home_scroll {
@@ -1385,6 +1390,19 @@ img {
 
   .home_content {
     display: flex;
+  }
+
+  .home_scroll-name {
+    font-size: 1.20em;
+    color: #ffffffea;
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+  }
+
+  .home_scroll-button {
+    margin-top: 2rem;
+    color: #ffffffea;
+    transition: .3s;
   }
 
 }
