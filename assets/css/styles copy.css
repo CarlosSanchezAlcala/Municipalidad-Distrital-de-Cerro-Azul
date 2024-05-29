@@ -1016,6 +1016,19 @@ img {
     width: 100%;
   }
 
+  .home {
+    background-image: url("../img/fondoMuelleAzulMovilesSegundaOpcion.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    gap: 1rem;
+    position: fixed;
+  }
+
   .container_muni_cerro_Azul {
     margin-top: 2em;
   }
@@ -1038,19 +1051,6 @@ img {
 
   .nav_list {
     column-gap: 0;
-  }
-
-  .home {
-    background-image: url("../img/fondoMuelleAzulMovilesSegundaOpcion.jpg");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 60rem;
-    max-height: 844px;
-    margin: 0px;
-    gap: 1rem;
   }
 
   .home_blob {
