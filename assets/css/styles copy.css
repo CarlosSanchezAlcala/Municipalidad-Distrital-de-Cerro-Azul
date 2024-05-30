@@ -1170,30 +1170,6 @@ img {
 }
 
 /* *! ================================= For medium devices ================================= */
-@media only screen and (min-width: 568px) {
-  .column {
-    width: 100%;
-  }
-
-  .home_content {
-    grid-template-columns: max-content 1fr 1fr;
-  }
-
-  .home_data {
-    grid-column: initial;
-  }
-
-  .home_img {
-    border: 1;
-    justify-self: center;
-  }
-
-  .about_container,
-  .footer_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media screen and (min-width:768px) {
   .container {
     margin-left: auto;
@@ -1317,7 +1293,6 @@ img {
     margin-top: 4.5rem;
   }
 }
-
 
 /* *! ================================= For large devices ================================= */
 @media screen and (min-width: 1024px) {
