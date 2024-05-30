@@ -837,7 +837,6 @@ img {
   transform: scale(0);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  font-weight: bold;
   animation: fade-up 1s forwards;
   animation-delay: 6s;
 }
