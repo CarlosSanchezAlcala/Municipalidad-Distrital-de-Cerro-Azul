@@ -823,6 +823,35 @@ img {
   }
 }
 
+.container-dissapear_alcalde {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1em;
+}
+
+.container-dissapear_alcalde span {
+  font-size: 1em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  animation: fade-up 22s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* *! ================================= BUTTONS ================================= */
 .button {
   border: none;
