@@ -828,27 +828,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -1em;
+  margin-top: 1em;
 }
 
 .container-dissapear_alcalde span {
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
+  transform: scale(0);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
-  animation: fade-up 22s;
+  animation: fade-up 1s forwards;
+  animation-delay: 6s;
 }
 
 @keyframes fade-up {
   0% {
     opacity: 0;
-    transform: translateY(30px) scale(0.9);
+    transform: scale(0.1);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 
