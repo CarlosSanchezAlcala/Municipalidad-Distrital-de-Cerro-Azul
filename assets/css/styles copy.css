@@ -957,7 +957,7 @@ img {
 }
 
 .footer_subtitle {
-  font-size: var(--small-font-size);
+  font-size: 15px;
 }
 
 .footer_links {
@@ -979,11 +979,28 @@ img {
   color: var(--first-color-lighter);
 }
 
+.footer_office {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  margin-top: var(--mb-3);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer_copy {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: #d8d3d3f3;
   margin-top: var(--mb-3);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer_title,
@@ -991,6 +1008,13 @@ img {
 .footer_link,
 .footer_social {
   color: #FFF;
+}
+
+.footer_subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* *! ================================= SCROLL UP ================================= */
@@ -1170,6 +1194,30 @@ img {
 }
 
 /* *! ================================= For medium devices ================================= */
+@media only screen and (min-width: 568px) {
+  .column {
+    width: 100%;
+  }
+
+  .home_content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home_data {
+    grid-column: initial;
+  }
+
+  .home_img {
+    border: 1;
+    justify-self: center;
+  }
+
+  .about_container,
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width:768px) {
   .container {
     margin-left: auto;
@@ -1290,7 +1338,7 @@ img {
   }
 
   .footer_copy {
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -1339,8 +1387,7 @@ img {
 
   .icon_image_escudo_muni {
     width: 444px;
-    margin-left: 890px;
-    margin-top: -380px;
+    margin: -0.5em 1em 3em 9em;
   }
 
   /* *! ====================================== CÓDIGO PERTENECIENTE A: "SECTION ICONS ACCESS" ====================================== */
