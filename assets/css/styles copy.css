@@ -1687,3 +1687,48 @@ ul li.links-help {
 .codisec-mdca {
   margin-top: -11px;
 }
+
+
+
+.imgs_cerro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container_imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.row_imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.column_imgs {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.container_imgs .title {
+  background-color: #EEEEEE;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container_imgs img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000000; */
+  border-radius: 4px;
+  padding: 5px;
+}
