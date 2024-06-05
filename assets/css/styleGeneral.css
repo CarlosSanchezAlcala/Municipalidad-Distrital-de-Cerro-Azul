@@ -1294,7 +1294,6 @@ img {
 
   .home_scroll-button {
     margin-top: -4em;
-    margin-left: 3rem;
   }
 
   .about_container {
@@ -1332,7 +1331,9 @@ img {
     justify-self: flex-end;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
   .column,
   .column-icons,
   .column-image {
@@ -1442,7 +1443,8 @@ img {
 }
 
 /* *! ================================= For large devices ================================= */
-@media screen and (min-width: 1024px) { /* *TODO: Tambien se puede llegar a usar el tamaño de: 1800px*/
+@media screen and (min-width: 1024px) {
+  /* *TODO: Tambien se puede llegar a usar el tamaño de: 1800px*/
 
   .header,
   .main,
@@ -1487,6 +1489,10 @@ img {
   .icon_image_escudo_muni {
     width: 444px;
     margin: -0.5em 1em 3em 9em;
+  }
+
+  .image_nav_escudo_cerro_azul {
+    width: 150px;
   }
 
   /* *! ====================================== CÓDIGO PERTENECIENTE A: "SECTION ICONS ACCESS" ====================================== */
@@ -1688,8 +1694,7 @@ ul li.links-help {
   margin-top: -11px;
 }
 
-
-
+/* *! ====================================== SECTION - CONTAINER IMAGES MUNI ====================================== */
 .imgs_cerro {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1731,4 +1736,40 @@ ul li.links-help {
   /* border: 1px solid #000000; */
   border-radius: 4px;
   padding: 5px;
+}
+
+
+/* *! ====================================== SECTION - IFRAMES ====================================== */
+.iframes_cerro_azul {
+  display: flex;
+  justify-content: space-between;
+  /* Ajusta el espacio entre las columnas */
+  align-items: flex-start;
+  /* Alinea los iframes al inicio verticalmente */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan si el espacio es limitado */
+}
+
+.container_facebook_muni_cerro_azul,
+.container_maps_muni_cerro_Azul {
+  flex: 0 0 500px;
+  /* Fija el ancho del contenedor */
+  height: 400px;
+  /* Fija la altura del contenedor */
+  margin: 10px;
+}
+
+.container_facebook_muni_cerro_azul {
+  margin: 0 0 0 240px;
+}
+
+.container_maps_muni_cerro_Azul {
+  margin: 0 240px 0 0;
+}
+
+iframe {
+  width: 100%;
+  /* Asegura que los iframes ocupen todo el ancho del contenedor */
+  height: 100%;
+  /* Asegura que los iframes ocupen toda la altura del contenedor */
 }
