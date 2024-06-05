@@ -115,6 +115,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
@@ -252,18 +256,6 @@ img {
   font-size: 1.2rem;
 }
 
-/*
-.nav_item_1,
-.nav_item_2,
-.nav_item_3,
-.nav_item_4,
-.nav_item_5,
-.nav_item_6,
-.nav_logo {
-  margin-right: 100px;
-}
-*/
-
 .nav_close {
   position: absolute;
   right: 1.3rem;
@@ -282,14 +274,10 @@ img {
   bottom: 0;
 }
 
-
-
-
 /* Active link */
 .active-link {
   color: var(--muni-tono-azul-1);
 }
-
 
 /* Change background header */
 .scroll-header {
@@ -1192,6 +1180,25 @@ img {
     transition: .3s;
   }
 
+  .iframes_cerro_azul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_facebook_muni_cerro_azul,
+  .container_maps_muni_cerro_Azul {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    padding: 10px 20px 10px 20px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  .imgs_cerro {
+    padding: 10px 20px 10px 20px;
+  }
 }
 
 /* *! ================================= For medium devices ================================= */
@@ -1444,7 +1451,6 @@ img {
 
 /* *! ================================= For large devices ================================= */
 @media screen and (min-width: 1024px) {
-  /* *TODO: Tambien se puede llegar a usar el tamaño de: 1800px*/
 
   .header,
   .main,
@@ -1489,10 +1495,6 @@ img {
   .icon_image_escudo_muni {
     width: 444px;
     margin: -0.5em 1em 3em 9em;
-  }
-
-  .image_nav_escudo_cerro_azul {
-    width: 150px;
   }
 
   /* *! ====================================== CÓDIGO PERTENECIENTE A: "SECTION ICONS ACCESS" ====================================== */
@@ -1560,20 +1562,132 @@ img {
     transition: .3s;
   }
 
+  /* *! ====================================== SECTION - CONTAINER IMAGES MUNI ====================================== */
+  .imgs_cerro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .container_imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .row_imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .column_imgs {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .container_imgs .title {
+    background-color: #EEEEEE;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .container_imgs img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+
+  /* *! ====================================== SECTION - IFRAMES ====================================== */
+  .iframes_cerro_azul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .container_facebook_muni_cerro_azul,
+  .container_maps_muni_cerro_Azul {
+    flex: 1 1 500px;
+    height: 400px;
+    margin: 10px;
+  }
+
+  .container_facebook_muni_cerro_azul {
+    margin: 0 0 0 240px;
+  }
+
+  .container_maps_muni_cerro_Azul {
+    margin: 0 240px 0 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* *! ====================================== SECTION - POP UP FOR START ====================================== */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 35px;
+  }
+
+  .modal-content img {
+    width: 100%;
+    display: block;
+    border-radius: 35px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -18px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 }
 
 /* *! ====================================== ICON IMAGE NAV_BAR ====================================== */
 .icon_image {
   width: 30px;
-  /* *TODO Ancho de la imagen */
   height: 30px;
-  /* *TODO Alto de la imagen */
   border-radius: 50%;
-  /* *TODO Para hacer que la imagen sea un círculo */
   margin-right: 5px;
-  /* *TODO Espacio entre la imagen y el texto */
   vertical-align: middle;
-  /* *TODO Alinea la imagen verticalmente con el texto */
 }
 
 /* *! ====================================== SECTION ICONS ACCESS ====================================== */
@@ -1607,8 +1721,6 @@ img {
 @media only screen and (min-width: 601px) {
   .column {
     width: calc(33.33% - 20px);
-    /* *TODO: Restablecer el ancho de las columnas en pantallas más grandes */
-    /* *TODO: Se puede ajustar según el diseño deseado */
   }
 }
 
@@ -1651,13 +1763,9 @@ ul li.links-help {
 
 .img-table-muni {
   width: 100%;
-  /* *TODO Cambiar el ancho de la imagen al 100% para que se ajuste al contenedor */
   max-width: 215px;
-  /* *TODO Establecer un ancho máximo para mantener el tamaño original de la imagen */
   display: block;
-  /* *TODO Hacer que las imágenes sean elementos de bloque */
   margin: 0 auto;
-  /* *TODO Centrar horizontalmente las imágenes */
 }
 
 .img-table-muni-audiencia {
@@ -1692,84 +1800,4 @@ ul li.links-help {
 
 .codisec-mdca {
   margin-top: -11px;
-}
-
-/* *! ====================================== SECTION - CONTAINER IMAGES MUNI ====================================== */
-.imgs_cerro {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.container_imgs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.row_imgs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.column_imgs {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
-}
-
-.container_imgs .title {
-  background-color: #EEEEEE;
-  color: black;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.container_imgs img {
-  width: 100%;
-  height: auto;
-  /* border: 1px solid #000000; */
-  border-radius: 4px;
-  padding: 5px;
-}
-
-
-/* *! ====================================== SECTION - IFRAMES ====================================== */
-.iframes_cerro_azul {
-  display: flex;
-  justify-content: space-between;
-  /* Ajusta el espacio entre las columnas */
-  align-items: flex-start;
-  /* Alinea los iframes al inicio verticalmente */
-  flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan si el espacio es limitado */
-}
-
-.container_facebook_muni_cerro_azul,
-.container_maps_muni_cerro_Azul {
-  flex: 0 0 500px;
-  /* Fija el ancho del contenedor */
-  height: 400px;
-  /* Fija la altura del contenedor */
-  margin: 10px;
-}
-
-.container_facebook_muni_cerro_azul {
-  margin: 0 0 0 240px;
-}
-
-.container_maps_muni_cerro_Azul {
-  margin: 0 240px 0 0;
-}
-
-iframe {
-  width: 100%;
-  /* Asegura que los iframes ocupen todo el ancho del contenedor */
-  height: 100%;
-  /* Asegura que los iframes ocupen toda la altura del contenedor */
 }
