@@ -243,6 +243,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -1493,6 +1494,9 @@ img {
     margin-top: 12em;
   }
 
+  .about_container {
+    margin-top: 4%;
+  }
 
   .home_blob {
     width: 350px;
@@ -1504,7 +1508,7 @@ img {
 
   .about_img {
     width: 245px;
-    margin-top: -5.5rem;
+    margin-top: -2.8rem;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
