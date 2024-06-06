@@ -936,7 +936,6 @@ img {
 
 .footer_bg {
   background-color: var(--muni-tono-azul-2);
-
 }
 
 .footer_title {
@@ -1105,6 +1104,7 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    margin-top: -25px;
   }
 
   .container-icon-access {
@@ -1198,6 +1198,24 @@ img {
 
   .imgs_cerro {
     padding: 10px 20px 10px 20px;
+  }
+
+  /* *TODO: Código para el footer en dispositivos moviles o pequeños*/
+  .footer_bg {
+    background-color: var(--muni-tono-azul-2);
+    padding: 10px 10px 10px 10px;
+  }
+
+  .footer_information_central {
+    margin-top: 20px;
+  }
+
+  .footer_subtitle {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .footer_copy {
+    margin-bottom: 70px;
   }
 }
 
