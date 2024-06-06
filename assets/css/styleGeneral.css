@@ -1211,13 +1211,19 @@ img {
     margin-top: 20px;
   }
 
+  .footer_office {
+    margin-bottom: 70px;
+  }
+
   .footer_subtitle {
     margin-top: 15px;
     text-align: center;
+    display: none;
   }
 
   .footer_copy {
     margin-bottom: 70px;
+    display: none;
   }
 
   .column_imgs {
@@ -1232,6 +1238,11 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  .icon_image_escudo_muni {
+    width: 250px;
+    margin: -0.5em 0 -1.5em 2em;
   }
 
 }
