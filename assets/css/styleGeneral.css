@@ -1219,6 +1219,21 @@ img {
   .footer_copy {
     margin-bottom: 70px;
   }
+
+  .column_imgs {
+    margin: 20px 0 20px 0;
+  }
+
+  .container_imgs .title {
+    background-color: #EEEEEE;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
 }
 
 /* *! ================================= For medium devices ================================= */
