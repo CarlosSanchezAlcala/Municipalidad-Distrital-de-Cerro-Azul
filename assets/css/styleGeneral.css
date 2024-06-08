@@ -1698,7 +1698,7 @@ img {
     padding: 20px;
     width: 100%;
     max-width: 700px;
-    background: white;
+    background: transparent;
     border-radius: 35px;
   }
 
