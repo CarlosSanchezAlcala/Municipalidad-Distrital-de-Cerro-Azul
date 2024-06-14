@@ -1496,7 +1496,7 @@ img {
   }
 }
 
-@media screen and (min-width: 821px) and (max-width: 1024px) {
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
 
   .column,
   .column-icons,
@@ -1518,7 +1518,7 @@ img {
   }
 
   .container_muni_cerro_Azul {
-    margin-top: -2em;
+    margin-top: 2em;
   }
 
   .home_container {
@@ -1563,23 +1563,23 @@ img {
   }
 
   .container-falling-municipalidad span {
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .container-falling-distrital-de span {
-    font-size: 1em;
+    font-size: 2em;
     margin-top: -0.1em;
   }
 
   .container-falling-cerro-azul span {
-    font-size: 1em;
+    font-size: 2em;
     margin-top: -0.1em;
   }
 
   .home_data_jose span,
   .home_data_pain span,
   .home_data_garcia span {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .home_data_jose,
@@ -1589,13 +1589,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -9em;
+    margin-top: 8em;
   }
-
-  .container-dissapear_alcalde {
-    margin-top: -2em;
+  .container-dissapear_alcalde{
+    margin-top: 2.5em;
   }
-
   .home_scroll-name {
     font-size: 1.20em;
     color: #ffffffea;
@@ -1975,7 +1973,7 @@ img {
     margin: -0.5em 1em 3em 9em;
   }
 
-  /* ======================================CÓDIGO PERTENECIENTE A: "SECTION ICONS ACCESS"====================================== */
+  /* *! ======================================CÓDIGO PERTENECIENTE A: "SECTION ICONS ACCESS"====================================== */
   .container-icon-access {
     text-align: center;
     display: flex;
@@ -1983,7 +1981,7 @@ img {
     justify-content: space-between;
   }
 
-  /* ======================================CÓDIGO PERTENECIENTE A: "SECTION - IMAGE STANDARD (IMAGENES CON LINKS)"====================================== */
+  /* *! ======================================CÓDIGO PERTENECIENTE A: "SECTION - IMAGE STANDARD (IMAGENES CON LINKS)"====================================== */
   .table-container-image-standard {
     text-align: center;
     display: flex;
@@ -1997,7 +1995,7 @@ img {
     padding-top: 35px;
   }
 
-  /* ======================================CÓDIGO PERTENECIENTE A ("home")====================================== */
+  /* *! ======================================CÓDIGO PERTENECIENTE A ("home")====================================== */
   .container-falling-municipalidad span {
     font-size: 1.5em;
   }
@@ -2050,6 +2048,10 @@ img {
     margin-top: 15em;
   }
 
+  .home_container {
+    margin-top: 150px;
+  }
+
   .home_content {
     display: flex;
   }
@@ -2062,12 +2064,12 @@ img {
   }
 
   .home_scroll-button {
-    margin-top: 2rem;
+    margin-top: -5rem;
     color: #ffffffea;
     transition: .3s;
   }
 
-  /* ======================================SECTION - CONTAINER IMAGES MUNI====================================== */
+  /* *! ======================================SECTION - CONTAINER IMAGES MUNI====================================== */
   .imgs_cerro {
     margin: 30px 0 30px 0;
   }
@@ -2110,7 +2112,7 @@ img {
   }
 
 
-  /* ======================================SECTION - IFRAMES====================================== */
+  /* *! ======================================SECTION - IFRAMES====================================== */
   .iframes_cerro_azul {
     display: flex;
     justify-content: space-between;
@@ -2138,7 +2140,7 @@ img {
     height: 100%;
   }
 
-  /* ======================================SECTION - POP UP FOR START====================================== */
+  /* *! ======================================SECTION - POP UP FOR START====================================== */
   .modal {
     display: none;
     position: fixed;
