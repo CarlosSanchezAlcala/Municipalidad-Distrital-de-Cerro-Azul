@@ -1,5 +1,11 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* font-family: "Concert One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+/* font-family: "Madimi One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
+/* font-family: "Glegoo", serif; */
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -7,6 +13,9 @@
 
   /*========== Colors ==========*/
 
+  --bg1: #f65e00;
+  --bg2: #0cc0df;
+  --bg3: #5271ff;
   --hue-color: 230;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -127,6 +136,8 @@ body {
   color: var(--text-color);
   margin-bottom: 0;
   padding-bottom: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -156,6 +167,7 @@ img {
 }
 
 .section__title {
+  font-family: "Concert One", sans-serif;
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
@@ -629,9 +641,10 @@ img {
 .home_data_jose span {
   font-size: 6em;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Glegoo", serif;
   letter-spacing: 5px;
   font-weight: bold;
+  font-style: normal;
   opacity: 0;
   animation: joseDrop 0.4s linear forwards;
 }
@@ -691,9 +704,10 @@ img {
 .home_data_pain span {
   font-size: 6em;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Glegoo", serif;
   letter-spacing: 5px;
   font-weight: bold;
+  font-style: normal;
   opacity: 0;
   animation: painDrop 0.4s linear forwards;
 }
@@ -753,9 +767,10 @@ img {
 .home_data_garcia span {
   font-size: 6em;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Glegoo", serif;
   letter-spacing: 5px;
   font-weight: bold;
+  font-style: normal;
   opacity: 0;
   animation: garciaDrop 0.4s linear forwards;
 }
@@ -1633,6 +1648,10 @@ img {
     margin-top: 4%;
   }
 
+  .about_description {
+    text-align: justify;
+  }
+
   .home_blob {
     width: 350px;
   }
@@ -1990,7 +2009,7 @@ img {
   .home_data_jose span {
     font-size: 4em;
     color: white;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Concert One", sans-serif;
     letter-spacing: 5px;
     font-weight: bold;
     opacity: 0;
@@ -2169,7 +2188,16 @@ img {
 }
 
 .links {
-  margin: 30px 0 30px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title-links-help {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .table-container {
@@ -2196,4 +2224,157 @@ ul {
 
 ul li.links-help {
   margin-bottom: 20px;
+}
+
+
+
+
+.img-cerro-referency {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title-cards-information-cerro-azul {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: -35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cards {
+  display: grid;
+  gap: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 0 10px var(--muni-tono-azul-2);
+  padding: 30px;
+  border-radius: 30px;
+  transition: height 0.3s ease-in-out;
+  margin-top: 100px;
+  background-color: var(--muni-tono-azul-2);
+}
+
+.card .img-holder {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-history-cards,
+.img-culture-cards,
+.img-art-cards,
+.img-deport-cards,
+.img-gastro-cards,
+.img-products-cards {
+  border-radius: 15px;
+  box-shadow: 0 0 10px #B5C0D0;
+}
+
+.img-history-cards {
+  width: 100%;
+  height: 180px;
+}
+
+.card:nth-child(1) .img-holder {
+  /* background-color: var(--bg1) */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card:nth-child(2) .img-holder {
+  /* background-color: var(--bg2); */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card:nth-child(3) .img-holder {
+  /* background-color: var(--bg3); */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card:nth-child(4) .img-holder {
+  /* background-color: var(--bg1) */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card:nth-child(5) .img-holder {
+  /* background-color: var(--bg2); */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card:nth-child(6) .img-holder {
+  /* background-color: var(--bg3); */
+  content: "";
+  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+}
+
+.card h2,
+.card p {
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: white;
+  text-align: center;
+}
+
+.card p {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  color: white;
+  text-align: justify;
+}
+
+.card a {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .img-holder {
+  transform: scale(0.9);
+  margin-top: -120px;
+}
+
+.card-content {
+  height: 35px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.card:hover .img-holder {
+  transform: scale(0.9);
+  margin-top: -120px;
+}
+
+.card:hover .card-content {
+  height: 450px;
+  overflow: visible;
+}
+
+.card:hover p,
+.card:hover a {
+  opacity: 1;
 }
