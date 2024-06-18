@@ -1307,6 +1307,219 @@ img {
     transform: translateY(-15px);
   }
 
+  /* *! ====================================== SECTION - CARDS OF IMAGES CERRO AZUL ====================================== */
+  .img-cerro-referency {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .title-cards-information-cerro-azul {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .cards {
+    display: grid;
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .card {
+    box-shadow: 0 0 10px var(--muni-tono-azul-2);
+    padding: 30px;
+    border-radius: 30px;
+    transition: height 0.3s ease-in-out;
+    background-color: var(--muni-tono-azul-2);
+  }
+
+  .card .img-holder {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .img-history-cards,
+  .img-culture-cards,
+  .img-art-cards,
+  .img-deport-cards,
+  .img-gastro-cards,
+  .img-products-cards {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #222831;
+    margin-bottom: -25px;
+  }
+
+  .img-history-cards {
+    width: 100%;
+    height: 180px;
+  }
+
+  .card:nth-child(1) .img-holder {
+    /* background-color: var(--bg1) */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(2) .img-holder {
+    /* background-color: var(--bg2); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(3) .img-holder {
+    /* background-color: var(--bg3); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(4) .img-holder {
+    /* background-color: var(--bg1) */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(5) .img-holder {
+    /* background-color: var(--bg2); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(6) .img-holder {
+    /* background-color: var(--bg3); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card h2,
+  .card p {
+    margin-bottom: 15px;
+  }
+
+  .card h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .card p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    color: white;
+    text-align: justify;
+  }
+
+  .card a {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .card:hover .img-holder {
+    transform: scale(0.9);
+    margin-top: -120px;
+  }
+
+  .card-content {
+    height: 35px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .card:hover .img-holder {
+    transform: scale(0.9);
+    margin-top: -120px;
+  }
+
+  .card:hover .card-content {
+    height: 450px;
+    overflow: visible;
+  }
+
+  .card:hover p,
+  .card:hover a {
+    opacity: 1;
+  }
+
+  /* *! ====================================== SECTION - IFRAMES ====================================== */
+  .iframes_cerro_azul {
+    margin: 50px 0 30px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .iframe-direct-facebook,
+  .iframe-direct-maps {
+    box-shadow: 0 0 20px var(--muni-tono-azul-2);
+  }
+
+  .container_facebook_muni_cerro_azul,
+  .container_maps_muni_cerro_Azul {
+    margin-left: 50px;
+  }
+
+  /* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
+  @media only screen and (min-width: 601px) {
+    .column {
+      width: calc(33.33% - 20px);
+    }
+  }
+
+  .links {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .title-links-help {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .table-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .links-muni-page a {
+    color: #6A6D7C;
+  }
+
+  .column-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li.links-help {
+    margin-bottom: 20px;
+  }
+
 }
 
 /* *! ================================= For medium devices ================================= */
@@ -1735,6 +1948,10 @@ img {
   }
 
   /* *! ====================================== SECTION ICONS ACCESS ====================================== */
+  .icon-access {
+    margin: 30px 0 30px 0;
+  }
+
   .container-general-links {
     width: 100%;
     display: flex;
@@ -1781,7 +1998,7 @@ img {
     height: 39%;
     max-height: 39%;
     border-radius: 30px;
-    box-shadow: 0 0 20px var(--muni-tono-azul-2);
+    box-shadow: 0 0 5px var(--muni-tono-azul-2);
     transition: .5s;
     text-align: center;
     align-content: center;
@@ -1819,20 +2036,6 @@ img {
 
   .container_muni_desarrollo_social:hover {
     transform: translateY(-15px);
-  }
-
-  /* *! ====================================== CÓDIGO PERTENECIENTE A: "SECTION - IMAGE STANDARD (IMAGENES CON LINKS)" ====================================== */
-  .table-container-image-standard {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--muni-tono-azul-2);
-    max-height: 200px;
-    min-height: 200px;
-    padding: 25px;
-    padding-bottom: 13px;
-    padding-top: 35px;
   }
 
   /* *! ====================================== CÓDIGO PERTENECIENTE A ("home")  ====================================== */
@@ -1874,45 +2077,6 @@ img {
     color: #ffffffea;
     transition: .3s;
   }
-
-  /* *! ====================================== SECTION - CONTAINER IMAGES MUNI ====================================== */
-  .container_imgs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .row_imgs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .column_imgs {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-  }
-
-  .container_imgs .title {
-    background-color: #EEEEEE;
-    color: black;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .container_imgs img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    padding: 5px;
-  }
-
 
   /* *! ====================================== SECTION - IFRAMES ====================================== */
   .iframes_cerro_azul {
@@ -1973,8 +2137,199 @@ img {
     cursor: pointer;
   }
 
-  .icon-access {
-    margin: 30px 0 30px 0;
+  /* *! ====================================== SECTION - CARDS OF IMAGES CERRO AZUL ====================================== */
+  .img-cerro-referency {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .title-cards-information-cerro-azul {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: -35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .cards {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .card {
+    box-shadow: 0 0 10px var(--muni-tono-azul-2);
+    padding: 30px;
+    border-radius: 30px;
+    transition: height 0.3s ease-in-out;
+    margin-top: 100px;
+    background-color: var(--muni-tono-azul-2);
+  }
+
+  .card .img-holder {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .img-history-cards,
+  .img-culture-cards,
+  .img-art-cards,
+  .img-deport-cards,
+  .img-gastro-cards,
+  .img-products-cards {
+    border-radius: 15px;
+    box-shadow: 0 0 20px #222831;
+  }
+
+  .img-history-cards {
+    width: 100%;
+    height: 180px;
+  }
+
+  .card:nth-child(1) .img-holder {
+    /* background-color: var(--bg1) */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(2) .img-holder {
+    /* background-color: var(--bg2); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(3) .img-holder {
+    /* background-color: var(--bg3); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(4) .img-holder {
+    /* background-color: var(--bg1) */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(5) .img-holder {
+    /* background-color: var(--bg2); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card:nth-child(6) .img-holder {
+    /* background-color: var(--bg3); */
+    content: "";
+    /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
+  }
+
+  .card h2,
+  .card p {
+    margin-bottom: 15px;
+  }
+
+  .card h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .card p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    color: white;
+    text-align: justify;
+  }
+
+  .card a {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .card:hover .img-holder {
+    transform: scale(0.9);
+    margin-top: -120px;
+  }
+
+  .card-content {
+    height: 35px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .card:hover .img-holder {
+    transform: scale(0.9);
+    margin-top: -120px;
+  }
+
+  .card:hover .card-content {
+    height: 450px;
+    overflow: visible;
+  }
+
+  .card:hover p,
+  .card:hover a {
+    opacity: 1;
+  }
+
+  /* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
+  @media only screen and (min-width: 601px) {
+    .column {
+      width: calc(33.33% - 20px);
+    }
+  }
+
+  .links {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .title-links-help {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .table-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .links-muni-page a {
+    color: #6A6D7C;
+  }
+
+  .column-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li.links-help {
+    margin-bottom: 20px;
   }
 
 }
@@ -2232,208 +2587,11 @@ img {
   }
 }
 
-/* *! ====================================== ICON IMAGE NAV_BAR ====================================== */
+/* *! ====================================== ICON IMAGE NAV_BAR - GENERAL ====================================== */
 .icon_image {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 5px;
   vertical-align: middle;
-}
-
-/* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
-@media only screen and (min-width: 601px) {
-  .column {
-    width: calc(33.33% - 20px);
-  }
-}
-
-.links {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.title-links-help {
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 45px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-.table-container {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.links-muni-page a {
-  color: #6A6D7C;
-}
-
-.column-header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li.links-help {
-  margin-bottom: 20px;
-}
-
-
-
-
-.img-cerro-referency {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.title-cards-information-cerro-azul {
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: -35px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-.cards {
-  display: grid;
-  gap: 30px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-}
-
-.card {
-  box-shadow: 0 0 10px var(--muni-tono-azul-2);
-  padding: 30px;
-  border-radius: 30px;
-  transition: height 0.3s ease-in-out;
-  margin-top: 100px;
-  background-color: var(--muni-tono-azul-2);
-}
-
-.card .img-holder {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-history-cards,
-.img-culture-cards,
-.img-art-cards,
-.img-deport-cards,
-.img-gastro-cards,
-.img-products-cards {
-  border-radius: 15px;
-  box-shadow: 0 0 20px #222831;
-}
-
-.img-history-cards {
-  width: 100%;
-  height: 180px;
-}
-
-.card:nth-child(1) .img-holder {
-  /* background-color: var(--bg1) */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card:nth-child(2) .img-holder {
-  /* background-color: var(--bg2); */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card:nth-child(3) .img-holder {
-  /* background-color: var(--bg3); */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card:nth-child(4) .img-holder {
-  /* background-color: var(--bg1) */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card:nth-child(5) .img-holder {
-  /* background-color: var(--bg2); */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card:nth-child(6) .img-holder {
-  /* background-color: var(--bg3); */
-  content: "";
-  /*Linea de código para evitar que salga el mensaje de regla de estilo vacia*/
-}
-
-.card h2,
-.card p {
-  margin-bottom: 15px;
-}
-
-.card h2 {
-  color: white;
-  text-align: center;
-}
-
-.card p {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  transition-delay: 0.1s;
-  color: white;
-  text-align: justify;
-}
-
-.card a {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  transition-delay: 0.1s;
-  display: inline-block;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 4px;
-  background-color: white;
-}
-
-.card:hover .img-holder {
-  transform: scale(0.9);
-  margin-top: -120px;
-}
-
-.card-content {
-  height: 35px;
-  overflow: hidden;
-  transition: height 0.3s ease-in-out;
-}
-
-.card:hover .img-holder {
-  transform: scale(0.9);
-  margin-top: -120px;
-}
-
-.card:hover .card-content {
-  height: 450px;
-  overflow: visible;
-}
-
-.card:hover p,
-.card:hover a {
-  opacity: 1;
 }
