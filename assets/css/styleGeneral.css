@@ -1333,6 +1333,7 @@ img {
   .card {
     box-shadow: 0 0 10px var(--muni-tono-azul-2);
     padding: 30px;
+    width: 90%;
     border-radius: 30px;
     transition: height 0.3s ease-in-out;
     background-color: var(--muni-tono-azul-2);
@@ -1467,11 +1468,17 @@ img {
   .iframe-direct-facebook,
   .iframe-direct-maps {
     box-shadow: 0 0 20px var(--muni-tono-azul-2);
+    max-width: 100%;
   }
 
   .container_facebook_muni_cerro_azul,
   .container_maps_muni_cerro_Azul {
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container_facebook_muni_cerro_azul {
+    margin-bottom: 20px;
   }
 
   /* *! ====================================== SECTION - LINKS FOR HELP ====================================== */
