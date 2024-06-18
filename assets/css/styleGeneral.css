@@ -1259,14 +1259,6 @@ img {
     margin: 20px;
   }
 
-  .links-muni-rentas,
-  .links-muni-tributaria,
-  .links-muni-tramites-obras,
-  .links-muni-obras {
-    margin-top: -10px;
-    padding: 20px;
-  }
-
   .container-icon-access p {
     color: black;
     font-weight: bold;
@@ -1289,10 +1281,6 @@ img {
     transition: .5s;
     text-align: center;
     align-content: center;
-  }
-
-  .container_muni_desarrollo_economico {
-    padding: 20px 20px 40px 20px;
   }
 
   .container_muni_infraestructura:hover {
