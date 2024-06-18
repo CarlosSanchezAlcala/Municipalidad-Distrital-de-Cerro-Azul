@@ -6,6 +6,8 @@
 /* font-family: "Madimi One", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
 /* font-family: "Glegoo", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&display=swap');
+/* font-family: "Noto Serif Ethiopic", serif; */
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -163,11 +165,12 @@ img {
 
 /* *! ================================= REUSABLE CSS CLASSES ================================= */
 .section {
+  margin-top: -1.5em;
   padding: 2rem 0 4rem;
 }
 
 .section__title {
-  font-family: "Concert One", sans-serif;
+  font-family: "Noto Serif Ethiopic", serif;
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
@@ -1070,7 +1073,6 @@ img {
 
   .column,
   .column-icons,
-  .container-icon-access,
   .column-image {
     width: 100%;
   }
@@ -1122,13 +1124,6 @@ img {
     justify-self: center;
     align-self: center;
     margin-top: -25px;
-  }
-
-  .container-icon-access {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .container-falling-municipalidad span {
@@ -1244,6 +1239,84 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  /* *! ====================================== SECTION ICONS ACCESS ====================================== */
+  .container-general-links {
+    width: 100%;
+    display: flex;
+  }
+
+  .container-icon-access {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .img-table-muni-gerencias {
+    width: 50px;
+    margin: 20px;
+  }
+
+  .links-muni-rentas,
+  .links-muni-tributaria,
+  .links-muni-tramites-obras,
+  .links-muni-obras {
+    margin-top: -10px;
+    padding: 20px;
+  }
+
+  .container-icon-access p {
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .container_muni_infraestructura,
+  .container_muni_desarrollo_economico,
+  .container_muni_servicios_ciudad,
+  .container_muni_seguridad,
+  .container_muni_administración_tributaria,
+  .container_muni_desarrollo_social {
+    /* background-color: var(--muni-tono-azul-1); */
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 85%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px var(--muni-tono-azul-2);
+    transition: .5s;
+    text-align: center;
+    align-content: center;
+  }
+
+  .container_muni_desarrollo_economico {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .container_muni_infraestructura:hover {
+    transform: translateY(-15px);
+  }
+
+  .container_muni_desarrollo_economico:hover {
+    transform: translateY(-15px);
+  }
+
+  .container_muni_servicios_ciudad:hover {
+    transform: translateY(-15px);
+  }
+
+  .container_muni_seguridad:hover {
+    transform: translateY(-15px);
+  }
+
+  .container_muni_administración_tributaria:hover {
+    transform: translateY(-15px);
+  }
+
+  .container_muni_desarrollo_social:hover {
+    transform: translateY(-15px);
   }
 
 }
@@ -1649,7 +1722,7 @@ img {
   }
 
   .about_description {
-    text-align: justify;
+    text-align: left;
   }
 
   .home_blob {
@@ -2276,7 +2349,7 @@ ul li.links-help {
 .img-gastro-cards,
 .img-products-cards {
   border-radius: 15px;
-  box-shadow: 0 0 10px #B5C0D0;
+  box-shadow: 0 0 20px #222831;
 }
 
 .img-history-cards {
@@ -2349,8 +2422,6 @@ ul li.links-help {
   padding: 15px;
   border-radius: 4px;
   background-color: white;
-  align-items: center;
-  justify-content: center;
 }
 
 .card:hover .img-holder {
