@@ -305,7 +305,7 @@ img {
 .home_content {
   color: #FFF;
   grid-template-columns: .5fr 3fr;
-  padding-top: 3.5rem;
+  /* padding-top: 3.5rem; */
   align-items: center;
 }
 
@@ -1184,7 +1184,7 @@ img {
   }
 
   .home_scroll-button {
-    margin-top: -16rem;
+    margin-top: -15rem;
     color: #ffffffea;
     transition: .3s;
   }
