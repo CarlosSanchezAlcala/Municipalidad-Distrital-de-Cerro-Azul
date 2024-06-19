@@ -165,7 +165,7 @@ img {
 
 /* *! ================================= REUSABLE CSS CLASSES ================================= */
 .section {
-  margin-top: -1.5em;
+  margin-top: -.5em;
   padding: 2rem 0 4rem;
 }
 
@@ -173,6 +173,7 @@ img {
   font-family: "Noto Serif Ethiopic", serif;
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  text-transform: uppercase;
 }
 
 .section__subtitle {
@@ -293,6 +294,10 @@ img {
 /* Active link */
 .active-link {
   color: var(--muni-tono-azul-1);
+}
+
+body.dark-theme .active-link {
+  color: var(--muni-tono-azul-2);
 }
 
 /* Change background header */
@@ -1037,6 +1042,10 @@ img {
   transition: .4s;
 }
 
+body.dark-theme .scrollup {
+  background-color: var(--muni-tono-azul-1);
+}
+
 .scrollup:hover {
   background-color: var(--first-color-alt);
 }
@@ -1208,6 +1217,10 @@ img {
     padding: 10px 10px 10px 10px;
   }
 
+  body.dark-theme .footer_bg {
+    background-color: var(--muni-tono-azul-1);
+  }
+
   .footer_information_central {
     margin-top: 20px;
   }
@@ -1281,6 +1294,16 @@ img {
     transition: .5s;
     text-align: center;
     align-content: center;
+  }
+
+  /* TODO: Color modo Oscuro - Dark Theme */
+  body.dark-theme .container_muni_infraestructura,
+  body.dark-theme .container_muni_desarrollo_economico,
+  body.dark-theme .container_muni_servicios_ciudad,
+  body.dark-theme .container_muni_seguridad,
+  body.dark-theme .container_muni_administración_tributaria,
+  body.dark-theme .container_muni_desarrollo_social {
+    background-color: white;
   }
 
   .container_muni_infraestructura:hover {
@@ -1957,6 +1980,10 @@ img {
     margin: -0.5em 1em 3em 9em;
   }
 
+  body.dark-theme .footer_bg {
+    background-color: var(--muni-tono-azul-1);
+  }
+
   /* *! ====================================== SECTION ICONS ACCESS ====================================== */
   .icon-access {
     margin: 30px 0 30px 0;
@@ -2012,6 +2039,16 @@ img {
     transition: .5s;
     text-align: center;
     align-content: center;
+  }
+
+  /* TODO: Color modo Oscuro - Dark Theme */
+  body.dark-theme .container_muni_infraestructura,
+  body.dark-theme .container_muni_desarrollo_economico,
+  body.dark-theme .container_muni_servicios_ciudad,
+  body.dark-theme .container_muni_seguridad,
+  body.dark-theme .container_muni_administración_tributaria,
+  body.dark-theme .container_muni_desarrollo_social {
+    background-color: white;
   }
 
   .container_muni_desarrollo_economico {
