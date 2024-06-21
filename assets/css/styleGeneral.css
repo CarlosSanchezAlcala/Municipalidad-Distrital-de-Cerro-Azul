@@ -1566,7 +1566,7 @@ body.dark-theme .scrollup {
     place-items: center;
     margin-inline: 1.5rem;
     padding-block: 5rem;
-    background-image: url("../img/glorietaOpacidad.png");
+    background-image: url("../img/glorietaOpacidad_v2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -2522,7 +2522,7 @@ body.dark-theme .scrollup {
   .imggg {
     display: block;
     max-width: 100%;
-    height: 100%;
+    height: 250px;
   }
 
   /*=============== CARD ===============*/
@@ -2535,20 +2535,26 @@ body.dark-theme .scrollup {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
   }
+
 
   .card__container {
     display: grid;
-    row-gap: 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 100px; */
   }
 
   .card__article {
     position: relative;
     overflow: hidden;
+    margin: 50px 50px;
   }
 
   .card__img {
-    width: 328px;
+    width: 428px;
     border-radius: 1.5rem;
   }
 
@@ -2612,7 +2618,6 @@ body.dark-theme .scrollup {
 
   .card__container:hover .card__article:not(:hover) {
     filter: blur(5px);
-    /* Ajusta el valor según tu preferencia */
   }
 
   /* Card animation */
