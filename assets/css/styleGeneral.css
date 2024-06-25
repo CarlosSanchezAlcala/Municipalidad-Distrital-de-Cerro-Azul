@@ -1121,7 +1121,7 @@ body.dark-theme .scrollup {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 20em;
   }
 
   .nav_menu {
@@ -1145,16 +1145,16 @@ body.dark-theme .scrollup {
   }
 
   .container-falling-municipalidad span {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .container-falling-distrital-de span {
-    font-size: 1em;
+    font-size: .8em;
     margin-top: -0.1em;
   }
 
   .container-falling-cerro-azul span {
-    font-size: 1em;
+    font-size: .8em;
     margin-top: -0.1em;
   }
 
@@ -1199,6 +1199,10 @@ body.dark-theme .scrollup {
     color: #ffffffea;
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
+  }
+
+  .container-dissapear_alcalde span {
+    font-size: .8em;
   }
 
   .home_scroll-button {
