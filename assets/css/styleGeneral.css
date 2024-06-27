@@ -342,7 +342,8 @@ a {
 }
 
 body.dark-theme .drop-down {
-  background: white;
+  background: #161927;
+  color: white;
 }
 
 .nav_link:hover {
