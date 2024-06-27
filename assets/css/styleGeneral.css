@@ -70,6 +70,12 @@
   /* *TODO ========= Paleta de colores Municipalidad de Cerro Azul =========*/
   --muni-tono-azul-1: #00446B;
   --muni-tono-azul-2: #015da8;
+  --muni-tono-azul-3: #ffcd01;
+  --muni-tono-azul-4: #c78c62;
+  --muni-tono-azul-5: #d6d6d6;
+  --muni-tono-azul-6: #29abe2;
+  --muni-tono-azul-7: #000000;
+  --muni-tono-azul-8: #ffffff;
 }
 
 /* Font size for large devices */
@@ -266,13 +272,13 @@ img {
   padding: 10px 10px;
 }
 
-.nav_link:hover {
+/* .nav_link:hover {
   color: var(--first-color);
   background-color: white;
   border-radius: 25px;
   transition: 0.3s ease-in-out;
 }
-
+ */
 .nav_icon {
   font-size: 1.2rem;
 }
@@ -297,11 +303,11 @@ img {
 
 /* Active link */
 .active-link {
-  color: var(--muni-tono-azul-1);
+  color: black;
 }
 
 body.dark-theme .active-link {
-  color: var(--muni-tono-azul-2);
+  color: white;
 }
 
 /* Change background header */
@@ -309,11 +315,11 @@ body.dark-theme .active-link {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
-.nav-link, .drop-down li {
+/* .nav_link, */ .drop-down li {
   list-style: none;
   height: 100%;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
+  padding: 0.5rem 2rem;
+  /* font-weight: 600; */
   cursor: pointer;
 }
 
@@ -330,7 +336,7 @@ a {
   color: black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: .5rem;
-  font-size: 12px;
+  font-size: 13px;
   display: none;
 }
 
@@ -338,9 +344,15 @@ body.dark-theme .drop-down {
   background: white;
 }
 
-.nav-link:hover {
+.nav_link:hover {
   background-color: black;
   color: #fff;
+  border-radius: 0.5rem;
+}
+
+body.dark-theme .nav_link:hover {
+  background-color: white;
+  color: black;
   border-radius: 0.5rem;
 }
 
@@ -366,8 +378,8 @@ body.dark-theme .drop-down {
 }
 
 .drop-down li:hover {
-  background: rgb(255, 0, 0);
-  color: #fff;
+  background: var(--muni-tono-azul-3);
+  color: black;
   border-radius: 0.5rem;
 }
 
@@ -3733,7 +3745,7 @@ body.dark-theme .scrollup {
 
   /* *! ====================================== SECTION ICONS ACCESS ====================================== */
   .icon-access {
-    margin: 30px 0 30px 0;
+    margin: 30px 0 80px 0;
   }
 
   .container-general-links {
